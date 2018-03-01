@@ -27,6 +27,6 @@
 		  "file_filters": [".docx"],
 		  "transMethod": "pemt",
           "region_prefix": "r"
-		},
+		}
 	]
 }
