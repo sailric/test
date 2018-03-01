@@ -17,7 +17,6 @@
 		   },
 		  "file_filters": [".idm;"],
 		  "targets": ["es","zh"],
-		  "output_path": "/Translated/",
 		  "transMethod": "mt" 
 		},
 		{ "path":"Word",
