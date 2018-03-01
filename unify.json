@@ -1,0 +1,33 @@
+{
+	"contact": "Yong Chen",
+	"email": "yongc@inwhatlanguage.com",
+	"targets": ["ge","ja"],
+	"updDays": "2",
+	"updHour": "1",
+	"file_filters": [".idml",".docx"],
+	"output_mask": {
+		"directory": "%dirname%-%langcode%",
+		"file": "%filename%-%langcode%.%fileext%"
+	},
+	"paths": [
+		{ "path":"/idml",
+		  "output_mask": {
+			"directory": "",
+			"file": "%filename%_%langcode%.%fileext%"
+		   },
+		  "file_filters": [".idm;"],
+		  "targets": ["es","zh"],
+		  "output_path": "/Translated/",
+		  "transMethod": "mt" 
+		},
+		{ "path":"Word",
+		  "output_mask": {
+			"directory": "",
+			"file": "%filename%-%langcode%.%fileext%"
+		   },
+		  "file_filters": [".docx"],
+		  "transMethod": "pemt",
+          "region_prefix": "r"
+		},
+	]
+}
