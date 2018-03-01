@@ -1,0 +1,537 @@
+{
+    "eml": {
+        "CoachingNoteReceived": {
+            "sub": "{{manager_full_name}} hat eine Coaching-Notiz für Dich hinterlassen"
+        },
+        "common": {
+            "thank": "Danke!",
+            "cn": "Zyklusbezeichnung",
+            "lu": "Zuletzt aktualisiert",
+            "gt": "Art des Ziels"
+        },
+        "TransferCreditsComplete": {
+            "sub": "Du hast soeben Guthabenpunkte erhalten!",
+            "tea": "Jawohl! Du hast soeben Guthabenpunkte erhalten!",
+            "body_txt": "Hallo {{first_name}}, <br>{{sender_name}} hat Dir soeben {{credit_amount}} Guthabenpunkte gesendet. Nur nicht schüchtern sein - nutze sie, um einen Kollegen anzuerkennen!<br>Anmerkungen: {{notes}}",
+            "link_txt": "Anerkennung jetzt abgeben"
+        },
+        "GoalCycleParticipantUploadProcessed": {
+            "sub": "Deine hochgeladene Ziel-Teilnehmerdatei wurde verarbeitet.",
+            "tea": "Deine hochgeladene Ziel-Teilnehmerdatei wurde verarbeitet!",
+            "body_txt": "Hallo {{first_name}}, <br><br>die Teilnehmerdatei, die Du für den Zyklus {{cycle_title}} hochgeladen hast, wurde verarbeitet:<br><br>{{audits}}<br>{{summary}}",
+            "link_txt": "Zielzyklus ansehen",
+            "add": "<strong>{{member_name}}<\/strong> wurde dem Zyklus hinzugefügt<br>",
+            "rem": "<strong>{{member_name}}<\/strong> wurde aus dem Zyklus entfernt<br>",
+            "sa": "<strong>{{member_name}} <\/strong>wurde<strong> nicht<\/strong> hinzugefügt, weil er\/sie bereits in dem Zyklus war<br>",
+            "sr": "<strong>{{member_name}} <\/strong>wurde <strong>nicht<\/strong> entfernt<br>",
+            "ea": "<strong>{{member_name}} <\/strong>wurde <strong>nicht <\/strong>hinzugefügt aufgrund des Fehlers {{error}}<br>",
+            "er": "<strong>{{member_name}} <\/strong>wurde<strong> nicht<\/strong> entfernt aufgrund des Fehlers {{error}}<br>",
+            "nadd": "<strong>{{number}} <\/strong>Teilnehmer zu dem Zyklus hinzugefügt<br>",
+            "nrem": "<strong>{{number}} <\/strong>Teilnehmer aus dem Zyklus entfernt<br>",
+            "nsa": "<strong>{{number}} <\/strong>Teilnehmer <strong>nicht <\/strong>hinzugefügt, weil er\/sie bereits in dem Zyklus war\/en<br>",
+            "nsr": "<strong>{{number}} <\/strong>Teilnehmer <strong>nicht <\/strong>entfernt<br>",
+            "nea": "<strong>{{number}} <\/strong>Teilnehmer<strong> nicht<\/strong> hinzugefügt aufgrund eines Fehlers<br>",
+            "ner": "<strong>{{number}} <\/strong>Teilnehmer<strong> nicht<\/strong> entfernt aufgrund eines Fehlers<br>"
+        },
+        "GoalCycleParticipantUploadError": {
+            "sub": "Die Teilnehmerdatei, die Du hochgeladen hast, weist Fehler auf.",
+            "tea": "Die Teilnehmerdatei, die Du hochgeladen hast, weist Fehler auf.",
+            "body_txt": "Hallo {{first_name}},<br><br>die Teilnehmerdatei, die Du für den Zyklus {file_name}} hochgeladen hast, wies folgende Fehler auf:<br><br>{{audits}}<br>",
+            "link_txt": "Zielzyklus ansehen",
+            "lfd": "Fehler beim Laden der Datei<br>",
+            "el": "Benutzerliste ist leer<br>",
+            "io": "Ungültige Vorgangsart<br><br>",
+            "mo": "Gemischte Vorgangsart<br>",
+            "elu": "Fehler beim Laden der Benutzer<br>",
+            "iun": "Ungültiger Benutzername {{value}}<br>",
+            "elm": "Fehler beim Laden des Mitglieds<br>",
+            "im": "Ungültiges Mitglied {{value}}<br>"
+        },
+        "GoalCycleBuilt": {
+            "sub": "Der Zielzyklus kann von Dir bearbeitet werden",
+            "tea": "Bearbeite und veröffentliche Deinen Zielzyklus",
+            "bod": "Hallo {{first_name}},<br><br>{{goal_cycle_title}} steht zur Verfügung! Folge bitte dem Link unten, um den Zyklus zu bearbeiten und zu veröffentlichen:<br>",
+            "lnk": "Zielzyklus"
+        },
+        "GoalCycleCommon": {
+            "que": "Wende Dich bei Fragen bitte an {{goal_cycle_creator_full_name}} unter {{goal_cycle_creator_email}}.",
+            "gpr": "Hallo {{full_name}},<br><br>Du bist Teil des {{goal_cycle_title}} Prozesses.",
+            "thk": "Wende Dich bei Fragen bitte an {{goal_cycle_creator_full_name}} unter {{goal_cycle_creator_email}}.<br><br> Danke!",
+            "vig": "Ziele ansehen",
+            "clg": "Ziele schließen",
+            "wog": "Ziele bearbeiten",
+            "gog": "{{goal_owner_full_name}}s Ziele",
+            "thkV2": "Wende Dich bei Fragen bitte an Deinen Vorgesetzten."
+        },
+        "GoalCycleDelivered": {
+            "sub": "Es ist Zeit, Ziele zu erstellen",
+            "tea": "@:eml.GoalCycleDelivered.sub",
+            "bod": "{{goal_process}} Folge bitte dem Link unten, um Deine {{participant_type}} Ziele abzuschließen.<br><br>Deine Ziele sind fällig am {{due_date}}",
+            "lnk": "Ziel erstellen",
+            "not": "Anmerkungen des Administrators:"
+        },
+        "TemplateGoalAssigned": {
+            "sub": "Es wurden Dir Ziele zugeordnet!",
+            "tea": "@:eml.TemplateGoalAssigned.sub",
+            "bod": "Die Ziele für {{goal_cycle_title}} wurden Dir gerade zugeordnet! Folge bitte dem Link unten, um sie zu sehen und Deinen Fortschritt zu verfolgen. Wende Dich bei Fragen bitte an Deinen Vorgesetzten.",
+            "lnk": "Ziel bearbeiten"
+        },
+        "GoalCommon": {
+            "thk": "Wende Dich bei Fragen bitte an {{direct_manager_full_name}} unter {{direct_manager_email}}.<br><br> Danke!",
+            "atk": "Wende Dich bei Fragen bitte an {{approver_full_name}} unter {{approver_email}}. <br><br>Danke!",
+            "rtk": "Anmerkung von {{approver_full_name}}:<br><br>{{note}}<br><br>Wende Dich bei Fragen bitte an {{approver_full_name}} unter {{direct_manager_email}}. <br><br>Danke!"
+        },
+        "GoalUpdateOverdueReminder": {
+            "sub": "Aktualisierung des Ziels überfällig!",
+            "tea": "@:eml.GoalUpdateOverdueReminder.sub",
+            "bod": "Hallo {{full_name}},<br><br>Dein {{goal_name}} {{last_updated}}. Bitte aktualisiere Dein Ziel.<br><br>{{manager_notes}}",
+            "lnk": "@:eml.GoalCycleCommon.clg"
+        },
+        "CloseAdhocGoalPrompt": {
+            "sub": "Zeit, Deine Ziele zu schließen!",
+            "tea": "@:eml.CloseAdhocGoalPrompt.sub",
+            "bod": "Hallo {{first_name}},<br><br>Deine persönlichen Ziele laufen bald aus. Bitte schließe Deine Ziele ab.<br><br>{{Goals}}",
+            "lnk": "@:eml.GoalCycleCommon.clg"
+        },
+        "GoalCycleOwnershipTransferred": {
+            "sub": "Die Verantwortlichkeit für den Zielzyklus wurde an Dich übertragen",
+            "tea": "@:eml.GoalCycleOwnershipTransferred.sub",
+            "bod": "Hallo {{first_name}},<br><br>Du bist nun der Verantwortliche für folgende(n) Zielzyklus \/ Zielzyklen.<br> <br>{{goal_cycles_table}}"
+        },
+        "GoalOwnershipTransferred": {
+            "sub": "Die Verantwortlichkeit für das Ziel wurde an Dich übertragen",
+            "tea": "@:eml.GoalOwnershipTransferred.sub",
+            "bod": "Hallo {{first_name}},<br><br>Du bist nun der Verantwortliche für folgende(s) Ziel(e). <br><br>{{goals_table}}"
+        },
+        "GoalApproverTransferred": {
+            "sub": "Der Ziel-Genehmigungsauftrag wurde an Dich übertragen",
+            "tea": "@:eml.GoalApproverTransferred.sub",
+            "bod": "Hallo {{first_name}},<br><br>Du hast nun den Genehmigungsauftrag für folgende(s) Ziel(e).<br><br>{{goals_table}}"
+        },
+        "GoalCheckIn": {
+            "sub": "Überprüfe Deinen Fortschritt!",
+            "tea": "@:eml.GoalCheckIn.sub",
+            "bod": "Hallo {{first_name}},<br><br>Du nimmt an dem Zielzyklus \"{{CycleTitle}}\" teil, was {{CheckInFrequency}} Aktualisierungen erfordert Verfolge Deinen Fortschritt:<br/><br/>{{html_body}} Danke!<br><br>",
+            "OnTimeGoalsLbl": "Die folgenden Ziele sind auf dem neuesten Stand:<br><br>",
+            "LateGoalsLbl": "Die folgenden Ziele sind nicht auf dem neuesten Stand:<br><br>",
+            "ClosedGoalsLbl": "Die folgenden Ziele wurden zur Schließung eingereicht<br><br>",
+            "SubmittedForClosureGoalsLbl": "Die folgenden Ziele wurden geschlossen:<br><br>"
+        },
+        "ApproverOKRStatus": {
+            "sub": "Status Mitarbeiterziel",
+            "tea": "Zusammenfassung Mitarbeiterzielaktivitäten",
+            "bod": "Name des Vorgesetzten: {{manager_name}}<br><br>{{email_body}}"
+        },
+        "CloseSingleAdhocGoalReminder": {
+            "sub": "Es ist Zeit, Dein Ziel zu schließen!",
+            "tea": "@:eml.CloseSingleAdhocGoalReminder.sub",
+            "bod": "Hallo {{first_name}},<br><br>Dein Ziel {{goal_name}} soll geschlossen werden. Bitte schließe Dein Ziel.<br><br>{{manager_notes}}",
+            "lnk": "@:eml.GoalCycleCommon.clg"
+        },
+        "CommentGoal": {
+            "sub": "{{name}} hat ein Ziel aktualisiert",
+            "tea": "Neuer Kommentar zu dem Ziel!",
+            "bod": "Hallo {{first_name}},<br><br>{{commentor_name}} hat ein Ziel aktualisiert, an dem Du beteiligt bist. Zur Ansicht bitte unten klicken.",
+            "lnk": "@:eml.GoalCycleCommon.vig"
+        },
+        "GoalsSetApproved": {
+            "sub": "Dein Ziel wurde genehmigt",
+            "tea": "Dein(e) Ziel(e) wurde(n) genehmigt!",
+            "bod": "Hallo {{first_name}},<br><br>Dein(e) Ziel(e) für {{goal_cycle_title}} wurden von {{approver_full_name}} genehmigt, gute Arbeit! Folge bitte dem Link unten, wenn Du jetzt auf Dein(e) Ziel(e) zugreifen möchtest:",
+            "lnk": "@:eml.GoalCycleCommon.vig"
+        },
+        "GoalsClosureApproved": {
+            "sub": "Deine Anfrage, ein Ziel zu schließen, wurde genehmigt",
+            "tea": "Deine Ziele sind jetzt geschlossen!",
+            "bod": "Hallo {{first_name}},<br><br>{{approver_full_name}} hat Deine Anfrage genehmigt, die Ziele für den {{goal_cycle_title}} Prozess zu schließen. Wenn Du Deine geschlossenen Ziele ansehen möchtest, folge bitte dem Link unten.",
+            "lnk": "@:eml.GoalCycleCommon.vig"
+        },
+        "GoalSetRejected": {
+            "sub": "Eines Deiner Ziele wurde zur Überprüfung zurückgeschickt",
+            "tea": "Dein Ziel wurde zur Überprüfung zurückgeschickt",
+            "bod": "Hallo {{first_name}},<br><br>Dein Ziel {{goal_name}} für {{goal_cycle_title}} wurde von {{approver_full_name}} zur Überprüfung zurückgeschickt.<br><br> Folge bitte dem Link unten, um das Ziel anzusehen.",
+            "lnk": "@:eml.GoalCycleCommon.vig"
+        },
+        "GoalCloseRejected": {
+            "sub": "Eines Deiner Ziele muss aktualisiert werden, bevor es geschlossen werden kann",
+            "tea": "Eines Deiner Ziele muss aktualisiert werden, bevor es geschlossen werden kann!",
+            "bod": "Hallo {{first_name}},<br><br>{{approver_full_name}} hat Deine Anfrage zurückgeschickt, das Ziel {{goal_name}} für den {{goal_cycle_title}} Prozess zu schließen. Deine Revision muss weiter bearbeitet werden. Folge bitte dem Link unten, um sie zu modifizieren.",
+            "lnk": "@:eml.GoalCycleCommon.vig"
+        },
+        "GoalSetRequested": {
+            "sub": "{{name}} hat Dir ein Ziel zur Genehmigung vorgelegt",
+            "tea": "Diese Ziele müssen von Dir genehmigt werden!",
+            "bod": "Hallo {{first_name}},<br><br>bitte folge dem Link unten, um das\/die von {{goal_owner_full_name}} vorgelegte(n) Ziel(e) für {{goal_cycle_title}} zu überprüfen.",
+            "lnk": "@:eml.GoalCycleCommon.gog"
+        },
+        "GoalCloseRequested": {
+            "sub": "{{name}} hat Dir ein Ziel vorgelegt, um das Schließen zu genehmigen",
+            "tea": "Abschluss des Ziels angefragt!",
+            "bod": "Hallo {{first_name}},{<br><br>{goal_owner_full_name}} hat ein Ziel für den {{goal_cycle_title}} Prozess vorgelegt und benötigt Deine Genehmigung für das Schließen. Bitte folge nachstehendem Link, um das\/die von {{goal_owner_full_name}} vorgelegte(n) Ziel(e) zu überprüfen.",
+            "lnk": "@:eml.GoalCycleCommon.gog"
+        },
+        "GoalCreatedForYou": {
+            "sub": "{{name}} hat ein Ziel für Dich erstellt.",
+            "tea": "Jemand hat ein Ziel für Dich erstellt!",
+            "bod": "Hallo {{first_name}},<br><br>{{goal_creator_full_name}} hat ein Ziel &#39;&#39;{{goal_name}}&#39;&#39; für Dich erstellt. Bitte folge dem Link unten, um auf das Ziel zuzugreifen.",
+            "lnk": "@:eml.GoalCycleCommon.vig",
+            "thk": "Wende Dich bei Fragen bitte an {{goal_creator_full_name}} unter {{goal_creator_email}}. <br><br>Danke!"
+        },
+        "CloseGoalPrompt": {
+            "sub": "Es ist Zeit, Deine Ziele zu schließen!",
+            "tea": "@:eml.CloseGoalPrompt.sub",
+            "bod": "Hallo {{first_name}},<br><br>{{goal_cycle_title}} nähert sich dem Ende, daher ist es Zeit, Deine Ziele zu aktualisieren und zu schließen. Folge bitte dem Link unten, um Deine letzten Fortschritte zu aktualisieren und Deine Ziele zu schließen:",
+            "lnk": "@:eml.GoalCycleCommon.clg",
+            "thk": "@:eml.GoalCycleCommon.thkV2"
+        },
+        "GoalCreationReminder": {
+            "sub": "Deine Ziele sind bald fällig!",
+            "tea": "@:eml.GoalCreationReminder.sub",
+            "bod": "Hallo {{first_name}},<br><br>Achtung! Deine {{participant_type}} Ziele für den {{goal_cycle_title}} Prozess sind am {{due_date}} fällig. Mindestens ein Ziel wurde noch nicht vorgelegt. Folge bitte dem Link unten, um sie abzuschließen:",
+            "lnk": "@:eml.GoalCycleCommon.wog",
+            "thk": "@:eml.GoalCycleCommon.thkV2"
+        },
+        "GoalOverdueReminder": {
+            "sub": "Pssst... Deine Ziele sind überfällig.",
+            "tea": "@:eml.GoalCreationReminder.sub",
+            "bod": "Hallo {{first_name}},<br><br>dies ist eine kurze Erinnerung an die Eingabe Deiner Ziele für {{goal_cycle_title}}, die am {{due_date}} fällig waren. Klicke bitte auf nachstehenden Link, um die Eingabe abzuschließen.",
+            "lnk": "@:eml.GoalCycleCommon.wog",
+            "thk": "@:eml.GoalCycleCommon.thkV2"
+        },
+        "CloseGoalOverdue": {
+            "sub": "Vergiss nicht, Deine Ziele zu schließen!",
+            "tea": "@:eml.CloseGoalOverdue.sub",
+            "bod": "Hallo {{first_name}},<br><br>Deine Ziele für {{goal_cycle_title}} waren am {{close_due_date}} fällig. Folge bitte dem Link unten, um Deine letzten Fortschritte endgültig zu aktualisieren und zu schließen:",
+            "lnk": "@:eml.GoalCycleCommon.wog",
+            "thk": "@:eml.GoalCycleCommon.thkV2"
+        },
+        "ParticipantType": {
+            "mem": "Einzelperson",
+            "tm": "Abteilung",
+            "cmp": "Unternehmen"
+        },
+        "Moved360ToRequesterAssess": {
+            "sub": "Bitte schließe Deine Bewertung zu {{subject_name}} ab",
+            "tea": "Du hast eine neue Anfrage erhalten",
+            "body_txt": "Hallo {{first_name}},<br><br>alle Teilnehmer haben Deine Anfrage für {{cycle_title}} zu {{subject_name}} beantwortet. Klicke bitte auf nachstehenden Link, um Deine Bewertung abzuschließen.",
+            "link_txt": "360 ansehen"
+        },
+        "Moved360ToMarkComplete": {
+            "sub": "Bitte überprüfe und schließe {{cycle_title}} für {{subject_name}} ab",
+            "tea": "Du hast eine neue Anfrage erhalten",
+            "body_txt": "Hallo {{first_name}},<br><br>alle Teilnehmer haben Deine Anfrage für {{cycle_title}} zu {{subject_name}} beantwortet. Klicke bitte auf nachstehenden Link, um diese 360 zu überprüfen und abzuschließen.",
+            "link_txt": "360 ansehen"
+        },
+        "Feedback360SubjectSessionRequested": {
+            "sub": "{{requester_name}} hat eine Selbstreflexion angefragt",
+            "tea": "Du hast eine neue Anfrage erhalten",
+            "body_txt": "Hallo {{first_name}},<br><br>{{requester_name}} hat eine Selbstreflexion für<strong> {{cycle_title}} <\/strong>angefragt. Bitte unten klicken, um zu starten.",
+            "link_txt": "Start"
+        },
+        "Feedback360ReviewerSessionRequested": {
+            "sub": "{{requester_name}} hat Dein Feedback zu {{subject_name}} angefragt",
+            "tea": "Du hast eine neue Anfrage erhalten",
+            "body_txt": "Hallo {{first_name},<br><br>{{requester_name}} hat Dein Feedback zu {{subject_name}} für<strong> {{cycle_title}} <\/strong>angefragt. Bitte unten klicken, um zu starten.",
+            "link_txt": "Start"
+        },
+        "FeedbackSessionRequested": {
+            "sub": "Neue Anfrage für {{cycle_title}}",
+            "tea": "Du hast eine neue Anfrage erhalten",
+            "body_txt": "Hallo {{first_name}},<br><br>{{subject_name}} würde sich freuen, wenn Du<strong> {{cycle_title}} <\/strong>abschließt.",
+            "link_txt": "Anfrage ansehen"
+        },
+        "FeedbackSessionDeclined": {
+            "sub": "Anfrage für {{cycle_title}} wurde abgelehnt.",
+            "sub_anonymous": "Jemand hat Deine Anfrage für {{cycle_title}} abgelehnt.",
+            "tea": "Deine Anfrage wurde abgelehnt",
+            "body_txt": "Hallo {{first_name}},<br><br>{{reviewer_name}} hat Deine Anfrage für<strong> {{cycle_title}} <\/strong>abgelehnt. <br><br>Grund der Ablehnung: <br><br>{{decline_note}}<br>",
+            "body_txt_anonymous": "Hallo {{first_name}},<br><br>jemand hat Deine Anfrage für<strong>{{cycle_title}}<\/strong> abgelehnt. <br><br>Grund der Ablehnung: <br><br>{{decline_note}}<br>",
+            "link_txt": "Anmerkung ansehen"
+        },
+        "SelfEvaluationSubmitted": {
+            "sub": "{{subject_name}} hat {{cycle_title}} abgeschlossen.",
+            "tea": "Geplanter Check-in abgeschlossen",
+            "body_txt": "Hallo {{first_name}},<br><br>{{subject_name}} hat <strong>{{cycle_title}} <\/strong>abgeschlossen.",
+            "link_txt": "Ansicht"
+        },
+        "FeedbackSessionSubmitted": {
+            "sub": "{{cycle_title}} von {{reviewer_name}} erhalten",
+            "sub_anonymous": "Jemand hat Deine Anfrage für {{cycle_title}} abgeschlossen.",
+            "tea": "Feedback erhalten",
+            "body_txt": "Hallo {{first_name}},<br><br>{{reviewer_name}} hat Deine Anfrage für <strong>{{cycle_title}} <\/strong>abgeschlossen.",
+            "body_txt_anonymous": "Hallo {{first_name}},<br><br> jemand hat auf Deine Anfrage für<strong>{{cycle_title}}<\/strong> geantwortet.",
+            "link_txt": "Ansicht"
+        },
+        "EvaluateOthersSubmitted": {
+            "sub": "{{cycle_title}} von {{reviewer_name}} zu {{subject_name}} erhalten.",
+            "sub_anonymous": "Jemand hat Deine Anfrage für {{cycle_title}} zu {{subject_name}} abgeschlossen.",
+            "tea": "Feedback erhalten",
+            "body_txt": "Hallo {{first_name}},<br><br>{{reviewer_name}} hat Deine Anfrage für<strong> {{cycle_title}} <\/strong>zu {{subject_name}} abgeschlossen.",
+            "body_txt_anonymous": "Hallo {{first_name}},<br><br> jemand hat auf Deine Anfrage für{{cycle_title}} zu {{subject_name}} geantwortet.",
+            "link_txt": "Ansicht"
+        },
+        "GiveFeedbackSubmitted": {
+            "sub": "{{cycle_title}} von {{reviewer_name}} erhalten",
+            "tea": "Feedback erhalten",
+            "body_txt": "Hallo {{first_name}},<br><br>{{reviewer_name}} hat Dir einen <strong>{{cycle_title}}<\/strong> zugeteilt.",
+            "link_txt": "Ansicht"
+        },
+        "Share360WithSubject": {
+            "sub": "{{requester_name}} hat Deinen {{cycle_title}} abgeschlossen und geteilt",
+            "tea": "Deine 360-Überprüfung steht Dir zur Verfügung",
+            "body_txt": "{{requester_name}} hat Deinen {{cycle_title}} abgeschlossen und geteilt. Bitte unten klicken, um ihn zu überprüfen und als abgeschlossen zu markieren.",
+            "link_txt": "Überprüfen"
+        },
+        "SelfEvaluationDelivered": {
+            "sub": "Neue Anfrage für {{cycle_title}}",
+            "tea": "Bitte schließe Deinen geplanten Check-in ab",
+            "body_txt": "Hallo {{first_name}},<br><br><strong>{{group_name}}<\/strong> würde sich freuen, wenn Du {{cycle_title}} abschließt.",
+            "link_txt": "Anfrage ansehen"
+        },
+        "FeedbackCheckInApproved": {
+            "sub": "Dein Check-in wurde genehmigt!",
+            "tea": "@:eml.FeedbackCheckInApproved.sub",
+            "body_txt": "Hallo {{first_name}}, <br><br>Dein höchster Vorgesetzter hat Deinen Check-in für {<strong>{cycle_title}}<\/strong> genehmigt! Bitte unten klicken, um Anmerkungen Deines Vorgesetzten zu überprüfen.",
+            "link_txt": "Check-in abmelden"
+        },
+        "FeedbackCheckInManagerNotesAvailable": {
+            "sub": "{{name}} hat {{title}} abgeschlossen!",
+            "tea": "{{name}} hat {{title}} abgeschlossen!",
+            "body_txt": "Hallo {{first_name}},<br><br>{{reviewer_name}} hat <strong>{{cycle_title}}<\/strong> abgeschlossen. Wenn Dein Vorgesetzter Anmerkungen hinzugefügt hat, kannst Du sie durch Klicken auf nachstehenden Link überprüfen.",
+            "link_txt": "Check-in ansehen"
+        },
+        "TalentInsightAssessmentDelivered": {
+            "sub": "Es ist Zeit, Deine Talenteinblicke-Bewertung abzuschließen",
+            "tea": "Bitte schließe Deine Teambewertung ab",
+            "body_txt": "Hallo {{first_name}},<br><br>es ist Zeit, die Talenteinblicke für Dein Team abzuschließen! Bitte auf nachstehenden Link klicken, um zu starten.",
+            "link_txt": "Talenteinblicke abschließen"
+        },
+        "FeedbackRequestExpiring": {
+            "sub": "Anfrage für {{cycle_title}} läuft in {{expire_in_days}} Tagen ab",
+            "tea": "Feedback-Anfrage läuft aus",
+            "body_txt": "Hallo {{first_name}},<br><br>{{subject_name}} hat Dir vor {{number_of_days}} Tagen eine Anfrage für {{cycle_title}} geschickt. Sie läuft in {{expire_in_days}} Tagen ab. Nimm Dir bitte vorher die Zeit, sie abzuschließen.",
+            "link_txt": "Anfrage ansehen"
+        },
+        "FeedbackSessionRated": {
+            "sub": "Du hast eine Anmerkung von {{subject_name}} erhalten.",
+            "tea": "Anmerkung erhalten",
+            "body_txt": "Hallo {{first_name}},<br><br>{{subject_name}} hat Dir eine Anmerkung bezüglich Deiner Antwort auf <strong>{{cycle_title}} <\/strong>geschickt.<br>",
+            "link_txt": "Anmerkung ansehen"
+        },
+        "FeedbackCardAvailable": {
+            "sub": "Neues Feedback-Formular verfügbar",
+            "tea": "Feedback-Formular verfügbar",
+            "body_txt": "Hallo {{first_name}},<br><br><strong>{{cycle_title}} <\/strong>steht Dir jetzt zur Nutzung zur Verfügung.<br\/>",
+            "link_txt": "Feedback anfragen"
+        },
+        "FeedbackCycleClosedOrArchived": {
+            "sub": "{{cycle_title}} nicht mehr verfügbar",
+            "tea": "Feedback nicht mehr verfügbar",
+            "body_txt": "Hallo {{first_name}},<br><br><strong>{{cycle_title}} <\/strong>wurde durch Deinen Admin {{cycle_status}} und Du kannst es nicht mehr abschließen. Wenn Du früher {{cycle_title}} verwendet hast, hast Du {{access_type}} weiter Zugriff auf diese Daten. <br\/><br\/>Wende Dich bei Fragen bitte an {{admin_name}} unter {{admin_email}}. <br\/> <br\/>"
+        },
+        "FeedbackSessionUnsubmitted": {
+            "sub": "{{unsubmitter_full_name}} hat Check-in zurückgezogen",
+            "tea": "Check-in mit Titel {{cycle_title}} wurde zurückgezogen",
+            "body_txt": "Sehr geehrte {{reviewers_full_names}}, {{unsubmitter_full_name}} hat {{cycle_title}} zur Überprüfung zurückgezogen. {{subject_full_name}} kann dies nun bearbeiten und erneut vorlegen.",
+            "link_txt": "Check-in"
+        },
+        "FeedbackSessionReopenedByManager": {
+            "sub": "Dein Check-in wurde wieder geöffnet",
+            "tea": "Check-in mit Titel {{cycle_title}} wurde wieder geöffnet",
+            "body_txt": "Sehr geehrte(r) {{subject_full_name}}, Ihr{{cycle_title}} wurde zur Überprüfung erneut geöffnet. Bei Fragen kontaktieren Sie bitte Ihren Vorgesetzten {{managers_full_name}}.",
+            "link_txt": "Check-in"
+        },
+        "EmployeeOnboarded": {
+            "sub": "Sie wurden von {{company}} eingeladen",
+            "tea": "Sie wurden von {{company}} eingeladen",
+            "body_txt": "Willkommen bei {{company}}, {{first_name}}! <br\/><br\/>{{company}} ist stolz auf die Einführung eines effizienten neuen Tools, das zu deinem Engagement für die Arbeit in nie gekanntem Maße beiträgt.",
+            "body_supplement_txt": "<br\/><br\/><strong>Dein Benutzername ist: {{username}} <\/strong><br\/> <br\/> Der Link läuft in {{hours}} Stunden ab. <br\/>Wenn Du auf ein Problem stößt, kopiere einfach app.highground.com in Deinen Browser und klicke auf Mein Passwort zurücksetzen. <br\/><br\/>Fragen?<br\/> support@highground.com",
+            "link_txt": "Konto bestätigen"
+        },
+        "PasswordResetRequestCreated": {
+            "sub": "HighGround Passwort zurücksetzen",
+            "tea": "HighGround Passwort zurücksetzen",
+            "body_txt": "Hallo {{first_name}},<br\/> <br\/>hast Du Dein Passwort vergessen? Kein Problem, das kann passieren! <br\/><br\/>Klicke auf nachstehende Schaltfläche oder diesen Link: {{link_url}}. Er läuft in einer Stunde ab. <br\/><br\/>Du hast diese Anfrage nicht gestellt? Ignoriere diese E-Mail einfach.",
+            "link_txt": "Passwort zurücksetzen"
+        },
+        "PasswordChanged": {
+            "sub": "Bestätigung für zurückgesetztes Passwort",
+            "tea": "Dein Passwort wurde geändert!",
+            "body_txt": "Hallo {{first_name}},<br\/> <br\/>anscheinend wurde Dein Passwort vor Kurzem geändert. Wenn Du es nicht geändert hast, kontaktiere einfach support@highground.com und wir lösen das Problem.",
+            "link_txt": "Login"
+        },
+        "UserNotificationEmailChanged": {
+            "sub": "Bestätigung aktualisierte E-Mail-Adresse",
+            "tea": "Deine Benachrichtigungs-E-Mail-Adresse wurde aktualisiert.",
+            "body_txt": "Hallo {{first_name}}, <br><br>anscheinend wurde Deine Benachrichtigungs-E-Mail-Adresse vor Kurzem geändert. Wenn Du sie nicht geändert hast, kontaktiere einfach support@highground.com und wir lösen das Problem."
+        },
+        "OffBoardMember": {
+            "sub": "{{group}} Konto deaktiviert",
+            "tea": "Dein Konto wurde deaktiviert",
+            "body_txt": "Hallo {{first_name}}, <br\/><br\/>Dein {{group}} Konto wurde deaktiviert. Du kannst Dich immer noch einloggen und Deine verbleibenden Punkte ausgeben. <br\/><br\/>Wenn Du denkst, dies ist fälschlicherweise passiert, oder wenn Du sonstige Fragen hast, kontaktiere einfach support@highground.com.",
+            "thank": "Danke, <br\/>{{group}}"
+        },
+        "RecapBuilder": {
+            "rcrr": "<strong>{{RecipientName}}<\/strong> hat eine<a href=\"{{RecUrl}}\"><strong> {{RecTitle}} <\/strong><\/a>Anerkennung erhalten!",
+            "rcr1": "1 Anerkennung wurde in dem Unternehmen {{CompanyRecognitionTime}} ausgesprochen.",
+            "rcrm": "{{CompanyRecognitionNumber}} Anerkennungen wurden in dem Unternehmen {{CompanyRecognitionTime}} ausgesprochen.",
+            "yst": "gestern",
+            "wk": "in der letzten Woche",
+            "fr": "am Freitag und während des Wochenendes",
+            "hi": "Hallo {{MyFirstName}},",
+            "yr1": "Du hast {{CompanyRecognitionTime}} 1 Anerkennung erhalten.",
+            "yrm": "Du hast {{CompanyRecognitionTime}} {{MyRecognitionNumber}} Anerkennungen erhalten.",
+            "grs": "Sprich jemandem Deine Anerkennung aus!",
+            "vr": "Alle Anerkennungen ansehen",
+            "lwa": "Jubiläen der letzten Woche",
+            "twa": "Jubiläen in dieser Woche",
+            "lwb": "Geburtstage der letzten Woche",
+            "twb": "Geburtstage in dieser Woche",
+            "ta": "Heutige Jubiläen",
+            "toa": "Morgige Jubiläen",
+            "twka": "Jubiläen an diesem Wochenende",
+            "pwka": "Jubiläen am letzten Wochenende",
+            "na": "Keine Jubiläen",
+            "tb": "Heutige Geburtstage",
+            "tob": "Morgige Geburtstage",
+            "twkb": "Geburtstage an diesem Wochenende",
+            "pwb": "Geburtstage am letzten Wochenende",
+            "nb": "Keine Geburtstage",
+            "ol": "1 Like",
+            "li": "{{like_num}} Likes",
+            "oc": "1 Kommentar",
+            "co": "{{comment_num}} Kommentare",
+            "cya": "Prüfe Deine {{program_name}} Aktivität, bleibe auf dem Laufenden",
+            "dare": "Täglich",
+            "wkre": "Wöchentlich",
+            "annis": "{{years}} Jahre am {{date}}",
+            "anni": "1 Jahr am {{date}}",
+            "rec": "{{interval}} Zusammenfassung",
+            "act": "{{interval}} {{company}} Aktivitätszusammenfassung",
+            "sma": "<a href=\"{{optout_url}}\">Alle {{total}} Jubiläen im Feed ansehen<\/a><br \/>",
+            "smb": "<a href=\"{{optout_url}}\">Alle {{total}} Geburtstage im Feed ansehen<\/a><br \/>",
+            "csma": "<a href=\"{{optout_url}}\">Mehr Jubiläen ansehen<\/a><br \/>",
+            "csmb": "<a href=\"{{optout_url}}\">Mehr Geburtstage ansehen<\/a>"
+        },
+        "RecognitionReceived": {
+            "sub": "Du hast eine Anerkennung erhalten!",
+            "tea": "Du hast eine Anerkennung erhalten!",
+            "body_txt": "Hallo {{first_name}},<br><br>{{recog_giver}} hat Dir das Abzeichen \"{{template_title}}\" verliehen! Klicke auf nachstehenden Link, um Deine Anerkennung zu sehen:",
+            "link_txt": "Anerkennung ansehen"
+        },
+        "ServiceAwardPointMissing": {
+            "sub": "Fehlende Punkte für Service-Auszeichnung",
+            "tea": "Bitte stelle Punkte für Benutzer aus",
+            "body_txt": "Hallo {{first_name}},<br><br>{{recipient_full_name}} hat das Abzeichen <strong>{{badge_title}} <\/strong>bekommen, aber keine {{point_number}} Punkte erhalten. Bitte stelle Punkte für {{recipient_full_name}} aus.",
+            "link_txt": "Anerkennung ansehen"
+        },
+        "PublicRecognitionReceived": {
+            "sub": "Öffentliche Anerkennung\/Bewertung erhalten",
+            "tea": "{{recipient_full_name}} hat eine öffentliche Anerkennung erhalten!",
+            "body_txt": "Hallo,<br><br>{{recipient_full_name}} hat das Abzeichen {{template_title}} von {{recog_giver}} {{recog_giver_company}} erhalten samt folgenden Elementen:<br> <br>{{if_canned_message_selected}}<br>Unternehmensbewertung: {{company_rating_number}}<br>{{recipient_full_name}}s Bewertung:{{recipient_first_name_rating_number}}<br><br>Klicke auf nachstehenden Link, um die Anerkennung zu sehen:<br>",
+            "link_txt": "Anerkennung(en) ansehen",
+            "none": "Keine"
+        },
+        "RecognitionCommentReceived": {
+            "sub": "Du hast 1 neuen Kommentar erhalten",
+            "tea": "Du hast 1 neuen Kommentar zu Deiner Anerkennung erhalten!",
+            "body_txt": "Hallo {{first_name}},<br><br>{{commentor_name}} hat gerade Dein Abzeichen kommentiert: <br><br>{{comment}}<br>",
+            "optout_txt": "<a href=\"{{optout_url}}\">Hier <\/a>klicken, um Benachrichtigungen über diese Anerkennung stumm zu schalten.",
+            "link_txt": "Kommentar ansehen"
+        },
+        "GiveRecognitionError": {
+            "sub": "Deine Anerkennung konnte nicht zugestellt werden",
+            "tea": "Deine Anerkennung konnte nicht zugestellt werden.",
+            "body_txt": "Hallo {{issuer_name}},<br><br>Deine Anerkennung konnte nicht zugestellt werden: <br><br>{{error_message}}"
+        },
+        "WelcomeReceived": {
+            "sub": "Willkommen beim {{program_name}}",
+            "tea": "Du hast eine Anerkennung erhalten!",
+            "body_txt": "Hallo {{first_name}},<br><br>{{recog_giver}} hat Dir das Abzeichen \"{{template_title}}\" verliehen! Klicke auf nachstehenden Link, um Deine Anerkennung zu sehen:",
+            "link_txt": "Anerkennung ansehen"
+        },
+        "Birthday": {
+            "sub": "Alles Gute zum Geburtstag sendet {{company}}!",
+            "tea": "Herzlichen Glückwunsch, {{first_name}}!",
+            "body_txt": "Hallo {{first_name}},<br><br>{{company}} gratuliert Dir zum {{birthday_title}} Klicke auf nachstehenden Link, um Deine Anerkennung zu sehen:<br\/>",
+            "link_txt": "Deine Anerkennung ansehen"
+        },
+        "Anniversary": {
+            "sub": "Alles Gute zum Jubiläum sendet {{company}}!",
+            "tea": "Alles Gute zum Jubiläum, {{first_name}}!",
+            "body_txt": "Hallo {{first_name}},<br><br>{{company}} gratuliert Dir zum {{birthday_title}} Klicke auf nachstehenden Link, um Deine Anerkennung zu sehen:<br\/>",
+            "link_txt": "Deine Anerkennung ansehen"
+        },
+        "PublicFeedbackReceived": {
+            "sub": "Öffentliches Feedback erhalten\/bewertet",
+            "tea": "Oh nein, {{recipient_full_name}} hat eine schlechte Bewertung erhalten",
+            "body_txt": "Hallo,<br><br>{{recog_giver}} hat {{recipient_full_name}} Feedback gegeben, samt folgender Elemente:<br> <br>Unternehmensbewertung: {{company_rating_number}}<br>{{recipient_full_name}}s Bewertung:{{recipient_first_name_rating_number}}<br><br> {{if_canned_message_selected}}<br><br><br>Danke!"
+        },
+        "UserTagged": {
+            "sub": "{{commentor_name}} hat Dich gerade in einem Kommentar erwähnt!",
+            "tea": "Du wurdest erwähnt!",
+            "body_txt": "Hallo {{first_name}},<br\/><br\/>{{commentor_name}} hat Dich gerade in einem Kommentar auf {{entity_type}} erwähnt:<br\/> <br\/>{{comment}}",
+            "link_txt": "Kommentar ansehen"
+        },
+        "RecogntionGive": {
+            "sub": "{{first_name}}, es ist Zeit, jemanden anzuerkennen",
+            "tea": "Es ist Zeit, jemanden anzuerkennen",
+            "body_txt": "Hallo {{first_name}},<br\/><br\/>ich habe festgestellt, dass Du seit längerem niemanden mehr im Rahmen von {{program_name}} anerkannt hast. Sich ein paar Minuten Zeit für eine öffentliche Anerkennung der Kollegen zu nehmen, hat große Auswirkungen.<br><br>Anmerkung: {{notes}}",
+            "link_txt": "Jemanden anerkennen"
+        },
+        "SpotBonusRequestToApprover": {
+            "sub": "Überprüfung erforderlich für Spot Bonus-Auszeichnung",
+            "tea": "Spot Bonus-Auszeichnung überprüfen",
+            "body_txt": "Hello {{approver_full_name}}, <br><br>{{giver_full_name}} hat einen Spot Bonus ({{spot_bonus_name}}{{spot_bonus_level}} {{spot_bonus_value}} {{spot_bonus_currency}}) für {{receiver_full_name}} eingereicht. Diese Auszeichnung wurde Deiner Prüfliste hinzugefügt. <br><br>Nachstehend die Nachricht, die {{giver_full_name}} hinzugefügt hat: <br><br>{{spot_bonus_message}} <br><br>Bitte beachte, dass wenn ein anderer die Genehmigung des Spot Bonus ablehnt, bevor Du sie überprüfen konntest, diese aus Deinem Arbeitsvorrat entfernt wird und Deine Genehmigung nicht mehr erforderlich ist.",
+            "link_txt": "Spot Bonus zur Überprüfung ansehen"
+        },
+        "SpotBonusRequestToGiver": {
+            "sub": "Danke für Deine Spot Bonus-Einreichung",
+            "tea": "Dein eingereichter Spot Bonus",
+            "body_txt": "Hallo {{giver_full_name}},<br><br>danke für Deine Einreichung eines Spot Bonus für {{receiver_full_name}. Deine Einreichung wird überprüft und Du wirst über die Ergebnisse informiert. Als Referenz: Du hast folgende Informationen eingereicht:<br><br>Name: {{receiver_full_name}}<br> Spot Bonus: {{spot_bonus_name}}{{spot_bonus_level}} für {{spot_bonus_value}} {{spot_bonus_currency}}.<br>Nachricht: {{spot_bonus_message}}"
+        },
+        "RejectSpotBonusRequest": {
+            "sub": "Spot Bonus-Auszeichnung abgelehnt",
+            "tea": "Ihr Spot Bonus wurde abgelehnt",
+            "body_txt": "Hallo {{giver_full_name}}, <br><br>der Spot Bonus, den Du für {{receiver_full_name}} eingereicht hast ({{spot_bonus_name}}{{spot_bonus_level}} für {{spot_bonus_value}} {{spot_bonus_currency}}.), wurde aus nachfolgenden Gründen abgelehnt:<br><br>{{reject_reason}}<br>{{reject_comment}}<br><br>Nachfolgend die Nachricht, die Du hinzugefügt hast: <br>{{spot_bonus_message}}",
+            "dr": "Doppelte Anfrage",
+            "nmr": "Erfüllt die Auszeichnungsvoraussetzungen nicht",
+            "slt": "Auf niedrigerer Ebene erneut vorlegen",
+            "sht": "Auf höherer Ebene erneut vorlegen",
+            "nea": "Person kommt nicht für Auszeichnung in Frage",
+            "min": "Mehr Informationen erforderlich"
+        },
+        "ApproveSpotBonusRequest": {
+            "sub": "Spot Bonus-Auszeichnung genehmigt",
+            "tea": "Dein Spot Bonus wurde genehmigt",
+            "pub_body_txt": "Hallo {{giver_full_name}}, <br><br>der Spot Bonus, den Du für {{receiver_full_name}} eingereicht hast ({{spot_bonus_name}}{{spot_bonus_level}}), wurde genehmigt. Der Spot Bonus ist nun für den Empfänger sichtbar und im Feed verfügbar.",
+            "body_txt": "Hallo {{giver_full_name}}, <br><br>der Spot Bonus, den Du für {{receiver_full_name}} eingereicht hast ({{spot_bonus_name}}{{spot_bonus_level}}), wurde genehmigt. Der Spot Bonus ist nun für den Empfänger sichtbar.",
+            "link_txt": "Zur Ansicht bitte hier klicken"
+        },
+        "YearSummaryReportReady": {
+            "sub": "Profilzusammenfassung steht für Download zur Verfügung",
+            "tea": "Profilzusammenfassung steht für Download zur Verfügung",
+            "body_txt": "Hallo {{first_name}},<br><br>diese Zusammenfassung steht für den Download zur Verfügung.<br><br>{{html_body}}",
+            "link_txt": "Zusammenfassung herunterladen",
+            "gls": "Ziele",
+            "fdb": "Feedback",
+            "chk": "Check-ins",
+            "rcg": "Anerkennungen"
+        },
+        "PulseSurveyOverdue": {
+            "sub": "{{programName}} Erinnerung an die Umfrage",
+            "tea": "Deine Teilnahme an der Stimmungsumfrage ist überfällig!",
+            "body_txt": "<p style='font-family: Helvetica, sans-serif;'>Hallo, <br\/><br\/>wir haben noch nichts von Dir gehört. {{responseType}} Deine Antworten bleiben immer anonym.<br\/><br\/><b>{{question}}<br\/><br\/><br\/>{{answerType}}<\/b><\/p>"
+        },
+        "TangoGiftCard_39443": {
+            "sub": "Deine {{card_name}} Geschenkkarteninformation befindet sich innen!",
+            "tea": "Vergütung beigefügt, viel Spaß!",
+            "body_txt": "Hallo {{first_name}}, <br><br>herzlichen Glückwunsch zur Einlösung Deiner Guthabenpunkte! <br><br>Die Vergütung in Form der Global Virtual Visa Card gibt Dir die Freiheit, Deine Anerkennung quasi überall zu genießen, wo die Visa-Karte akzeptiert wird. Du kannst sofort über das Budget verfügen und mit der Global Virtual Visa das Online-Shopping bei Deinen Lieblings-Online-Händlern beginnen.<br><br> Lösche diese Nachricht nicht - Du wirst die nachstehende URL für die Einlösung brauchen. Vielleicht druckst Du Dir diese Nachricht aus, um sie später zur Hand zu haben. Deine Bestellnummer ist {{order_number}}<br><br>.Danke!",
+            "link_txt": "Jetzt einlösen",
+            "claim_url_txt": "URL beanspruchen",
+            "gca_txt": "Betrag der Geschenkkarte:",
+            "redeem_instructions": "Anweisungen für die Einlösung: Bitte aktiviere Dein Prepaid-Konto noch heute. Dieser Aktivierungscode läuft 30 Tage nach dem Datum dieser E-Mail ab, wenn er nicht verwendet wird. Wenn Deine Prepaid-Karte aktiviert wurde, läuft sie nach 12 Monaten ab.",
+            "disclaimer": "* EntroPay Visa-Karten werden im Rahmen einer Lizenz von Visa Europe von der Bank of Valletta oder von Transact Network Limited ausgestellt. Die vertretenen Händler sind keine Sponsoren der Vergütungen und in keiner Weise mit dieser Werbeaktion verbunden. Die beigefügten Logos und andere Identitätsmerkmale sind eingetragende Marken der jeweiligen vertretenen Unternehmen und\/oder ihrer Tochterunternehmen."
+        }
+    }
+}

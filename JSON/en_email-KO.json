@@ -1,0 +1,537 @@
+{
+    "eml": {
+        "CoachingNoteReceived": {
+            "sub": "{{manager_full_name}} 님이 코칭 메모를 전달해 드렸습니다."
+        },
+        "common": {
+            "thank": "감사합니다!",
+            "cn": "주기 이름",
+            "lu": "마지막 업데이트",
+            "gt": "목표 유형"
+        },
+        "TransferCreditsComplete": {
+            "sub": "방금 크레딧이 발급되었습니다!",
+            "tea": "오예! 방금 크레딧이 발급되었습니다!",
+            "body_txt": "안녕하세요. {{first_name}} 님.<br> {{sender_name}} 님이 방금 {{credit_amount}} 크레딧을 보냈습니다. 부끄러워 하지 마시고 직장동료에게 포상하실 때 사용하세요!<br>참고: {{notes}}",
+            "link_txt": "지금 포상을 전달하세요"
+        },
+        "GoalCycleParticipantUploadProcessed": {
+            "sub": "업로드하신 목표 참가자 파일이 처리되었습니다.",
+            "tea": "업로드하신 목표 참가자 파일이 처리되었습니다!",
+            "body_txt": "안녕하세요. {{first_name}} 님. <br><br>주기 {{cycle_title}}에 대해 업로드하신 참가자 파일이 처리되었습니다.<br><br>{{audits}}<br>{{summary}}",
+            "link_txt": "목표 주기 보기",
+            "add": "<strong>{{member_name}}<\/strong> 님이 주기에 추가되었습니다.<br>",
+            "rem": "<strong>{{member_name}}<\/strong> 님이 주기에서 제거되었습니다.<br>",
+            "sa": "<strong>{{member_name}}<\/strong> 님은 이미 해당 주기에 있었기 때문에 추가되지 <strong>않았습니다<\/strong>.<br>",
+            "sr": "<strong>{{member_name}}<\/strong> 님이 제거되지 <strong>않았습니다<\/strong>.<br>",
+            "ea": "오류 {{error}} 때문에 <strong>{{member_name}}<\/strong> 님이 추가되지 <strong>않았습니다<\/strong>.<br>",
+            "er": "오류 {{error_name} 때문에 <strong>{{member_name}}<\/strong> 님이 제거되지 <strong>않았습니다<\/strong>.<br>",
+            "nadd": "<strong>{{number}}<\/strong>명의 참가자가 주기에 추가되었습니다.<br>",
+            "nrem": "<strong>{{number}}<\/strong>명의 참가자가 주기에서 제거되었습니다.<br>",
+            "nsa": "참가자가 이미 주기에 있었기 때문에 <strong>{{number}}<\/strong>명의 참가자가 추가되지 <strong>않았습니다<\/strong>.<br>",
+            "nsr": "<strong>{{number}}<\/strong>명의 참가자가 제거되지 <strong>않았습니다<\/strong>.<br>",
+            "nea": "오류로 인해 <strong>{{number}}<\/strong>명의 참가자가 추가되지 <strong>않았습니다<\/strong>.<br>",
+            "ner": "오류로 인해 <strong>{{number}}<\/strong>명의 참가자가 제거되지 <strong>않았습니다<\/strong>.<br>"
+        },
+        "GoalCycleParticipantUploadError": {
+            "sub": "업로드하신 참가자 파일에 오류가 있습니다.",
+            "tea": "업로드하신 참가자 파일에 오류가 있습니다.",
+            "body_txt": "안녕하세요. {{first_name}}<br><br> 님, 주기 {{file_name}}에 대해 업로드하신 참가자 파일에 다음과 같은 오류가 있습니다.<br><br>{{audits}}<br>",
+            "link_txt": "목표 주기 보기",
+            "lfd": "파일 로드 중 오류 발생<br>",
+            "el": "빈 사용자 목록<br>",
+            "io": "잘못된 작업 유형<br><br>",
+            "mo": "혼합된 작업 유형<br>",
+            "elu": "사용자 로드 중 오류 발생<br>",
+            "iun": "잘못된 사용자 이름 {{value}}<br>",
+            "elm": "구성원 로딩 중 오류 발생<br>",
+            "im": "잘못된 구성원 {{value}}<br>"
+        },
+        "GoalCycleBuilt": {
+            "sub": "목표 주기를 편집할 준비가 되었습니다.",
+            "tea": "목표 주기 수정 및 게시",
+            "bod": "안녕하세요. {{first_name}}<br><br> 님. {{goal_cycle_title}}이(가) 준비되었습니다. 주기를 수정 및 게시하려면 아래 링크를 클릭하십시오.<br>",
+            "lnk": "목표 주기"
+        },
+        "GoalCycleCommon": {
+            "que": "궁금한 사항은 {{goal_cycle_creator_full_name}}에게 이메일 {{goal_cycle_creator_email}}(으)로 문의하시기 바랍니다.",
+            "gpr": "안녕하세요. {{full_name}} 님<br><br>. {{goal_cycle_title}} 과정에 참여하셨습니다.",
+            "thk": "궁금한 점이 있으면 {{goal_cycle_creator_full_name}}에게이메일 {{goal_cycle_creator_email}}(으)로 문의하시기 바랍니다. <br><br>감사합니다.",
+            "vig": "목표 보기",
+            "clg": "목표 마감",
+            "wog": "목표 작업",
+            "gog": "{{goal_owner_full_name}}의 목표",
+            "thkV2": "궁금한 사항은 매니저에게 문의하시기 바랍니다."
+        },
+        "GoalCycleDelivered": {
+            "sub": "목표를 작성할 때입니다.",
+            "tea": "@:eml.GoalCycleDelivered.sub",
+            "bod": "{{goal_process}} 해당 {{participant_type}} 목표를 완료하려면 아래 링크를 클릭하십시오.<br><br>해당 목표의 완료 기한은 {{due_date}}입니다.",
+            "lnk": "목표 작성",
+            "not": "관리자 메모:"
+        },
+        "TemplateGoalAssigned": {
+            "sub": "목표가 할당되었습니다!",
+            "tea": "@:eml.TemplateGoalAssigned.sub",
+            "bod": "{{goal_cycle_title}}에 대한 목표가 방금 할당되었습니다. 아래 링크를 따라 목표를 보신 후 진행 상황을 추적하십시오. 궁금한 사항은 매니저에게 문의하시기 바랍니다.",
+            "lnk": "목표 작업"
+        },
+        "GoalCommon": {
+            "thk": "궁금한 사항은 {{direct_manager_full_name}}에게 이메일 {{direct_manager_email}}(으)로 문의하시기 바랍니다.<br><br>감사합니다.",
+            "atk": "궁금한 사항은 {{approver_full_name}}에게 이메일 {{approver_email}}(으)로 문의하시기 바랍니다.<br><br>감사합니다.",
+            "rtk": "{{approver_full_name}}의 메모:<br><br>{{note}}<br><br>궁금한사항은 {{approver_full_name}}에게 이메일 {{approver_email}}(으)로 문의하시기 바랍니다.<br><br>감사합니다."
+        },
+        "GoalUpdateOverdueReminder": {
+            "sub": "목표 업데이트 기한이 지났습니다!",
+            "tea": "@:eml.GoalUpdateOverdueReminder.sub",
+            "bod": "안녕하세요. {{full_name}}님.<br><br>귀하의 {{goal_name}}에 대한 마지막 업데이트 날짜는 {{last_updated}}입니다. 해당 목표를 업데이트하십시오.<br><br>{{manager_notes}}",
+            "lnk": "@:eml.GoalCycleCommon.clg"
+        },
+        "CloseAdhocGoalPrompt": {
+            "sub": "목표를 마감할 때입니다!",
+            "tea": "@:eml.CloseAdhocGoalPrompt.sub",
+            "bod": "안녕하세요. {{first_name}} 님.<br><br>귀하의 개인 목표가 곧 종료됩니다. 해당 목표를 마감하십시오.<br><br>{{Goals}}",
+            "lnk": "@:eml.GoalCycleCommon.clg"
+        },
+        "GoalCycleOwnershipTransferred": {
+            "sub": "목표 주기 소유권이 귀하께 이전되었습니다.",
+            "tea": "@:eml.GoalCycleOwnershipTransferred.sub",
+            "bod": "안녕하세요. {{first_name}} 님.<br><br> 다음 목표 주기의 소유자가 되셨습니다.<br><br>{{goal_cycles_table}}"
+        },
+        "GoalOwnershipTransferred": {
+            "sub": "목표 소유권이 귀하께 이전되었습니다.",
+            "tea": "@:eml.GoalOwnershipTransferred.sub",
+            "bod": "안녕하세요. {{first_name}} 님.<br><br>이제 다음 목표의 소유자가 되셨습니다.<br><br>{{goals_table}}"
+        },
+        "GoalApproverTransferred": {
+            "sub": "목표 승인자가 귀하께 이전되었습니다.",
+            "tea": "@:eml.GoalApproverTransferred.sub",
+            "bod": "안녕하세요. {{first_name}} 님.<br><br>이제 다음 목표의 승인자가 되셨습니다.<br><br>{{goals_table}}"
+        },
+        "GoalCheckIn": {
+            "sub": "진행 상황을 확인하십시오!",
+            "tea": "@:eml.GoalCheckIn.sub",
+            "bod": "안녕하세요. {{first_name}} 님.<br><br>{{CheckInFrequency}} 업데이트를 필요로 하는 목표 주기 \"{{CycleTitle}}\"에 참여하셨습니다. 진행 상황을 추적하십시오.<br/><br/>{{html_body}} 감사합니다!<br><br>",
+            "OnTimeGoalsLbl": "최신 버전인 목표:<br><br>",
+            "LateGoalsLbl": "늦은 목표:<br><br>",
+            "ClosedGoalsLbl": "마감을 위해 제출된 목표:<br><br>",
+            "SubmittedForClosureGoalsLbl": "마감된 목표:<br><br>"
+        },
+        "ApproverOKRStatus": {
+            "sub": "직원 목표 상태",
+            "tea": "직원 목표 활동 요약",
+            "bod": "관리자 이름: {{manager_name}}<br><br>{{email_body}}"
+        },
+        "CloseSingleAdhocGoalReminder": {
+            "sub": "목표를 마감할 때입니다.",
+            "tea": "@:eml.CloseSingleAdhocGoalReminder.sub",
+            "bod": "안녕하세요. {{first_name}} 님.<br><br>귀하의 목표 {{goal_name}} 기한까지 얼마남지 않았습니다. 목표를 마감하십시오.<br><br>{{manager_notes}}",
+            "lnk": "@:eml.GoalCycleCommon.clg"
+        },
+        "CommentGoal": {
+            "sub": "{{name}} 님이 목표를 업데이트했습니다.",
+            "tea": "목표에 대한 새로운 메모가 있습니다!",
+            "bod": "안녕하세요. {{first_name}} 님.<br><br>{{commentor_name}} 님이 귀하와 관련된 목표를 업데이트했습니다. 보시려면 아래를 클릭하십시오.",
+            "lnk": "@:eml.GoalCycleCommon.vig"
+        },
+        "GoalsSetApproved": {
+            "sub": "해당 목표가 승인되었습니다.",
+            "tea": "해당 목표가 승인되었습니다.",
+            "bod": "안녕하세요. {{first_name}} 님.<br><br>{{approver_full_name}} 님이 {{goal_cycle_title}}에 대한 귀하의 목표를 승인했습니다. 잘 하셨습니다! 지금 목표에 액세스하려면 아래 링크를 클릭하십시오.",
+            "lnk": "@:eml.GoalCycleCommon.vig"
+        },
+        "GoalsClosureApproved": {
+            "sub": "목표를 마감하려는 귀하의 요청이 승인되었습니다.",
+            "tea": "이제 귀하의 목표가 마감되었습니다!",
+            "bod": "안녕하세요. {{first_name}} 님.<br><br>{{approver_full_name}} 님이 {{goal_cycle_title}} 과정에 대한 목표를 마감하려는 귀하의 요청을 승인했습니다. 마감된 목표를 보려면 아래 링크를 클릭하십시오.",
+            "lnk": "@:eml.GoalCycleCommon.vig"
+        },
+        "GoalSetRejected": {
+            "sub": "해당 목표 중 하나가 수정을 위해 반송되었습니다.",
+            "tea": "해당 목표가 수정을 위해 반송되었습니다.",
+            "bod": "안녕하세요. {{first_name}} 님.<br><br>{{approver_full_name}} 님이 {{goal_cycle_title}}에 대한 귀하의 목표 {{goal_name}}을(를) 반송했습니다.<br><br>목표를 보려면 아래 링크를 클릭하십시오.",
+            "lnk": "@:eml.GoalCycleCommon.vig"
+        },
+        "GoalCloseRejected": {
+            "sub": "해당 목표들 중 하나는 마감하기 전에 업데이트가 필요합니다.",
+            "tea": "해당 목표들 중 하나는 마감하기 전에 업데이트가 필요합니다!",
+            "bod": "안녕하세요. {{first_name}} 님.<br><br>{{approver_full_name}} 님이 {{goal_cycle_title}} 과정에 대한 목표 {{goal_name}}을(를) 마감하려는 귀하의 요청을 반송했습니다. 계속하려면 해당 수정은 필수입니다. 수정하려면 아래 링크를 클릭하십시오.",
+            "lnk": "@:eml.GoalCycleCommon.vig"
+        },
+        "GoalSetRequested": {
+            "sub": "{{name}} 님이 귀하의 승인을 받기 위해 목표를 제출했습니다.",
+            "tea": "이 목표는 귀하의 승인이 필요합니다!",
+            "bod": "안녕하세요. {{first_name}} 님.<br><br>{{goal_cycle_title}}에 대해 {{goal_owner_full_name}} 님이 제출한 목표를 검토하려면 아래 링크를 클릭하십시오.",
+            "lnk": "@:eml.GoalCycleCommon.gog"
+        },
+        "GoalCloseRequested": {
+            "sub": "{{name}} 님이 승인을 위해 목표를 제출했습니다.",
+            "tea": "목표 마감이 요청되었습니다.",
+            "bod": "안녕하세요.{{first_name}} 님.<br><br>{{goal_owner_full_name}} 님이 {{goal_cycle_title}} 과정의 목표를 제출했으며 마감에 대한 귀하의 승인이 필요합니다. {{goal_owner_full_name}} 님이 제출한 목표를 검토하려면 아래 링크를 클릭하십시오.",
+            "lnk": "@:eml.GoalCycleCommon.gog"
+        },
+        "GoalCreatedForYou": {
+            "sub": "{{name}} 님이 귀하에 대한 목표를 작성했습니다.",
+            "tea": "누군가가 귀하를 위한 목표를 작성했습니다!",
+            "bod": "안녕하세요. {{first_name}} 님.<br><br>{{goal_creator_full_name}} 님이 목표 ''{{goal_name}}''을(를) 작성했습니다. 목표에 액세스하려면 아래 링크를 클릭하십시오.",
+            "lnk": "@:eml.GoalCycleCommon.vig",
+            "thk": "궁금한 사항은 {{goal_creator_full_name}}에게 이메일 {{goal_creator_email}}(으)로 문의하시기 바랍니다.<br><br>감사합니다."
+        },
+        "CloseGoalPrompt": {
+            "sub": "목표를 마감할 때입니다!",
+            "tea": "@:eml.CloseGoalPrompt.sub",
+            "bod": "안녕하세요. {{first_name}} 님.<br><br>{{goal_cycle_title}}의 종료가 얼마남지 않았습니다. 이제 목표를 업데이트 및 마감할 때입니다. 최종 진행 상황을 업데이트하고 목표를 마감하려면 아래 링크를 클릭하십시오.",
+            "lnk": "@:eml.GoalCycleCommon.clg",
+            "thk": "@:eml.GoalCycleCommon.thkV2"
+        },
+        "GoalCreationReminder": {
+            "sub": "귀하의 목표 기한이 얼마남지 않았습니다!",
+            "tea": "@:eml.GoalCreationReminder.sub",
+            "bod": "안녕하세요. {{first_name}} 님.<br><br>준비하세요! {{goal_cycle_title}} 과정에 대한귀하의 {{participant_type}} 목표 기한은 {{due_date}}입니다. 하나 이상의 목표가 아직 제출되지 않았습니다. 완료하려면 아래 링크를 클릭하십시오.",
+            "lnk": "@:eml.GoalCycleCommon.wog",
+            "thk": "@:eml.GoalCycleCommon.thkV2"
+        },
+        "GoalOverdueReminder": {
+            "sub": "안타깝게도 귀하의 목표 기한이 지났습니다.",
+            "tea": "@:eml.GoalCreationReminder.sub",
+            "bod": "안녕하세요. {{first_name}} 님.<br><br>기한이 {{due_date}}인 {{goal_cycle_title}}에 대한 목표를 입력하시기 바랍니다. 입력을 마치려면 아래 링크를 클릭하십시오.",
+            "lnk": "@:eml.GoalCycleCommon.wog",
+            "thk": "@:eml.GoalCycleCommon.thkV2"
+        },
+        "CloseGoalOverdue": {
+            "sub": "해당 목표는 반드시 마감하십시오!",
+            "tea": "@:eml.CloseGoalOverdue.sub",
+            "bod": "안녕하세요. {{first_name}} 님.<br><br>{{goal_cycle_title}}에 대한 귀하의 목표 달성 기한은 {{close_due_date}}입니다 진행 상황을 최종 업데이트하고 마감하려면 아래 링크를 클릭하십시오.",
+            "lnk": "@:eml.GoalCycleCommon.wog",
+            "thk": "@:eml.GoalCycleCommon.thkV2"
+        },
+        "ParticipantType": {
+            "mem": "개인",
+            "tm": "부서",
+            "cmp": "회사"
+        },
+        "Moved360ToRequesterAssess": {
+            "sub": "{{subject_name}}에 대한 평가를 완료하십시오.",
+            "tea": "새로운 요청이 있습니다.",
+            "body_txt": "안녕하세요. {{first_name}} 님.<br><br>모든 참가자들이 {{subject_name}}을(를) 주제로 하는 {{cycle_title}} 요청에 대한 응답을 보내 주셨습니다. 해당 평가를 완료하려면 아래 링크를 클릭하십시오.",
+            "link_txt": "360 보기"
+        },
+        "Moved360ToMarkComplete": {
+            "sub": "{{subject_name}}에 대한 {{cycle_title}}을(를) 검토 및 완료하십시오.",
+            "tea": "새로운 요청이 있습니다.",
+            "body_txt": "안녕하세요. {{first_name}} 님.<br><br>모든 참가자들이 {{subject_name}}을(를) 주제로 하는 {{cycle_title}} 요청에 대한 응답을 보내 주셨습니다. 이것을 360 검토 및 완료하려면 아래 링크를 클릭하십시오.",
+            "link_txt": "360 보기"
+        },
+        "Feedback360SubjectSessionRequested": {
+            "sub": "{{requester_name}} 님이 자아성찰을 요청했습니다.",
+            "tea": "새로운 요청이 있습니다.",
+            "body_txt": "안녕하세요. {{first_name}} 님.<br><br>{{requester_name}} 님이 <strong>{{cycle_title}}<\/strong>에 대한 자아성찰을 요청했습니다. 시작하려면 아래를 클릭하십시오.",
+            "link_txt": "시작"
+        },
+        "Feedback360ReviewerSessionRequested": {
+            "sub": "{{requester_name}} 님이 {{subject_name}}에 대한 피드백을 요청했습니다.",
+            "tea": "새로운 요청이 있습니다.",
+            "body_txt": "안녕하세요. {{first_name}} 님.<br><br>{{requester_name}} 님이 {{subject_name}}을(를) 주제로 하는 <strong>{{cycle_title}}<\/strong>에 대한 귀하의 피드백을 요청했습니다. 시작하려면 아래를 클릭하십시오.",
+            "link_txt": "시작"
+        },
+        "FeedbackSessionRequested": {
+            "sub": "{{cycle_title}}에 대한 새로운 요청",
+            "tea": "새로운 요청이 있습니다.",
+            "body_txt": "안녕하세요. {{first_name}} 님.<br><br>{{subject_name}}님이 <strong>{{cycle_title}}<\/strong>을(를) 완료하기를 원합니다.",
+            "link_txt": "요청 보기"
+        },
+        "FeedbackSessionDeclined": {
+            "sub": "{{cycle_title}}에 대한 요청이 거부되었습니다.",
+            "sub_anonymous": "누군가가 {{cycle_title}}에 대한 귀하의 요청을 거부했습니다.",
+            "tea": "해당 요청이 거부되었습니다.",
+            "body_txt": "안녕하세요. {{first_name}} 님.<br><br>{{reviewer_name}} 님이 <strong>{{cycle_title}}<\/strong>에 대한 귀하의 요청을 거부했습니다. <br><br>거부 사유: <br><br>{{decline_note}}<br>",
+            "body_txt_anonymous": "안녕하세요. {{first_name}} 님.<br><br>누군가가 <strong>{{cycle_title}}<\/strong>에 대한 귀하의 요청을 거부했습니다. <br><br>거부 사유: <br><br>{{decline_note}}<br>",
+            "link_txt": "메모 보기"
+        },
+        "SelfEvaluationSubmitted": {
+            "sub": "{{subject_name}} 님이 {{cycle_title}}을(를) 완료했습니다.",
+            "tea": "예정된 체크인 완료됨",
+            "body_txt": "안녕하세요. {{first_name}} 님.<br><br>{{subject_name}} 님이 <strong>{{cycle_title}}<\/strong>을(를) 완료했습니다.",
+            "link_txt": "보기"
+        },
+        "FeedbackSessionSubmitted": {
+            "sub": "{{reviewer_name}}(으)로부터 {{cycle_title}}을(를) 받았습니다.",
+            "sub_anonymous": "누군가가 {{cycle_title}}에 대한 요청을 완료했습니다.",
+            "tea": "피드백 접수됨",
+            "body_txt": "안녕하세요 {{first_name}} 님.<br><br>{{reviewer_name}} 님이 <strong>{{cycle_title}}<\/strong>에 대한 귀하의 요청을 완료했습니다.",
+            "body_txt_anonymous": "안녕하세요. {{first_name}} 님.<br><br>누군가가 <strong>{{cycle_title}}<\/strong>에 대한 귀하의 요청에 응답했습니다.",
+            "link_txt": "보기"
+        },
+        "EvaluateOthersSubmitted": {
+            "sub": "{{subject_name}}에 대하여 {{reviewer_name}} 님으로부터 {{cycle_title}}이(가) 수신되었습니다.",
+            "sub_anonymous": "누군가가 {{subject_name}}을(를) 주제로 하는 {{cycle_title}}에 대한 귀하의 요청을 완료했습니다.",
+            "tea": "피드백 접수됨",
+            "body_txt": "안녕하세요. {{first_name}} 님.<br><br>{{reviewer_name}} 님이 {{subject_name}}을(를)주제로 하는 <strong>{{cycle_title}}<\/strong>에 대한 귀하의 요청을 완료했습니다.",
+            "body_txt_anonymous": "안녕하세요. {{first_name}} 님.<br><br>누군가가 {{subject_name}}을(를) 주제로 하는 {{cycle_title}}에 대한 귀하의 요청에 응답했습니다.",
+            "link_txt": "보기"
+        },
+        "GiveFeedbackSubmitted": {
+            "sub": "{{reviewer_name}} 님으로부터 {{cycle_title}}을(를) 받았습니다.",
+            "tea": "피드백 접수됨",
+            "body_txt": "안녕하세요. {{first_name}} 님.<br><br>{{reviewer_name}} 님이 <strong>{{cycle_title}}<\/strong>을(를) 제공했습니다.",
+            "link_txt": "보기"
+        },
+        "Share360WithSubject": {
+            "sub": "{{requester_name}} 님이 귀하의 {{cycle_title}}을(를) 작성 및 공유했습니다.",
+            "tea": "360 검토를 사용하실 수 있습니다.",
+            "body_txt": "{{requester_name}} 님이 {{cycle_title}}을(를) 공유했습니다. 검토 후 완료로 표시하려면 아래를 클릭하십시오.",
+            "link_txt": "검토"
+        },
+        "SelfEvaluationDelivered": {
+            "sub": "{{cycle_title}}에 대한 새로운 요청",
+            "tea": "예정된 체크인을 완료하십시오.",
+            "body_txt": "안녕하세요. {{first_name}} 님.<br><br>{{group_name}}님이 <strong>{{cycle_title}}<\/strong>을(를) 완료하겠습니다.",
+            "link_txt": "요청 보기"
+        },
+        "FeedbackCheckInApproved": {
+            "sub": "해당 체크인이 승인되었습니다.",
+            "tea": "@:eml.FeedbackCheckInApproved.sub",
+            "body_txt": "안녕하세요. {{first_name}} 님.<br><br>귀하의 상위 관리자가 <strong>{{cycle_title}}<\/strong>에 대한 체크인을 승인했습니다. 관리자가 캡처한 메모를 검토하려면 아래를 클릭하십시오.",
+            "link_txt": "해당 체크인 서명"
+        },
+        "FeedbackCheckInManagerNotesAvailable": {
+            "sub": "{{name}} 님이 {{title}}을(를) 완료했습니다!",
+            "tea": "{{name}} 님이 {{title}}을(를) 완료했습니다!",
+            "body_txt": "안녕하세요. {{first_name}} 님.<br><br>{{reviewer_name}} 님이 <strong>{{cycle_title}}<\/strong>을(를) 완료했습니다. 관리자가 메모를 추가했다면 아래 링크를 클릭하여 해당 메모를 검토할 수 있습니다.",
+            "link_txt": "체크인 보기"
+        },
+        "TalentInsightAssessmentDelivered": {
+            "sub": "인재 인사이트 평가를 완료할 때입니다.",
+            "tea": "팀 평가를 완료하십시오.",
+            "body_txt": "안녕하세요. {{first_name}} 님.<br><br>귀하 팀의 인재 인사이트를 완료할 때입니다. 시작하려면 아래 링크를 클릭하십시오.",
+            "link_txt": "인재 인사이트 완료"
+        },
+        "FeedbackRequestExpiring": {
+            "sub": "{{cycle_title}}에 대한 요청 기한은 {{expire_in_days}}일입니다.",
+            "tea": "피드백 요청 만기",
+            "body_txt": "안녕하세요. {{first_name}} 님.<br><br>{{subject_name}}님이 {{number_of_days}}일 전 {{cycle_title}}에 대한 요청을 귀하께 보내드렸습니다. 기한일은 {{expire_in_days}}입니다. 그 전에 충분한 시간을 가지고 작성하십시오.",
+            "link_txt": "요청 보기"
+        },
+        "FeedbackSessionRated": {
+            "sub": "{{subject_name}}에게서 메모를 받았습니다.",
+            "tea": "메모 받음",
+            "body_txt": "안녕하세요. {{first_name}} 님.<br><br>{{subject_name}} 님이 <strong>{{cycle_title}}<\/strong>에 대한 답변과 관련하여 메모를 보냈습니다.<br>",
+            "link_txt": "메모 보기"
+        },
+        "FeedbackCardAvailable": {
+            "sub": "새 피드백 양식 사용 가능",
+            "tea": "피드백 양식 사용 가능",
+            "body_txt": "안녕하세요. {{first_name}} 님.<br><br><strong>{{cycle_title}}<\/strong>을(를) 사용하실 수 있습니다.<br\/>",
+            "link_txt": "피드백 요청"
+        },
+        "FeedbackCycleClosedOrArchived": {
+            "sub": "{{cycle_title}}은(는) 더 이상 사용할 수 없습니다.",
+            "tea": "더 이상 사용할 수 없는 피드백입니다.",
+            "body_txt": "안녕하세요. {{first_name}} 님.,<br><br><strong>{{cycle_title}}<\/strong>의 상태는 담당 관리자에 의해 {{cycle_status}}이(가) 되었으므로 완료하실 수 없습니다. 과거에 {{cycle_title}}을(를) 사용하셨던 적이 있다면 {{access_type}}(으)로 해당 기록에 접근하실 수 있습니다.<br\/><br\/>궁금한 사항은 {{admin_name}}에게 {{admin_email}}(으)로 문의하시기 바랍니다. <br\/> <br\/>"
+        },
+        "FeedbackSessionUnsubmitted": {
+            "sub": "{{unsubmitter_full_name}} 님이 체크인 제출을 취소했습니다.",
+            "tea": "제목이 {{cycle_title}}인 체크인 체출이 취소되었습니다.",
+            "body_txt": "안녕하세요. {{reviewers_full_names}} 님. {{unsubmitter_full_name}} 님이 수정에 대한 {{cycle_title}}의 제출을 취소했습니다. {{subject_full_name}} 님은 이제 내용을 수정하여 다시 제출할 수 있습니다.",
+            "link_txt": "체크인"
+        },
+        "FeedbackSessionReopenedByManager": {
+            "sub": "해당 체크인이 다시 열렸습니다.",
+            "tea": "제목이 {{cycle_title}}인 체크인이 다시 열렸습니다.",
+            "body_txt": "안녕하세요. {{subject_full_name}} 님. {{cycle_title}}이(가) 수정을 위해 다시 열렸습니다. 궁금한 사항은 담당 관리자 {{managers_full_name}}에게 문의하십시오.",
+            "link_txt": "체크인"
+        },
+        "EmployeeOnboarded": {
+            "sub": "{{company}}에 초대되셨습니다.",
+            "tea": "{{company}}에 초대되셨습니다.",
+            "body_txt": "{{first_name}} 님. {{company}}에 오신 것을 환영합니다! <br\/><br\/>{{company}}은(는) 전과 전혀 다른 방식으로 업무에 참여할 수 있게 돕는 강력한 새로운 도구를 자랑스럽게 소개합니다.",
+            "body_supplement_txt": "<br\/><br\/><strong>귀하의 사용자 이름은 {{username}}입니다.<\/strong><br\/><br\/>이 링크는 {{hours}}시간 후에 만료됩니다. <br\/>문제가 발생하면 app.highground.com을 브라우저에 붙여넣고 내 비밀번호 재설정을 클릭하십시오.<br\/><br\/>문의처:<br\/> support@highground.com",
+            "link_txt": "계정 확인"
+        },
+        "PasswordResetRequestCreated": {
+            "sub": "HighGround 비밀번호 재설정",
+            "tea": "HighGround 비밀번호 재설정",
+            "body_txt": "안녕하세요. {{first_name}} 님.<br\/><br\/>비밀번호를 잊으셨나요? 걱정 마세요. 흔히 일어나는 일이랍니다! <br\/><br\/>아래 버튼 또는 이 링크를 클릭하십시오. {{link_url}} 1시간 후에 만료됩니다. <br\/><br\/>이 건을 요청하지 않으셨나요? 본 이메일은 그냥 무시하십시오.",
+            "link_txt": "비밀번호 재설정"
+        },
+        "PasswordChanged": {
+            "sub": "비밀번호 재설정 확인",
+            "tea": "해당 비밀번호가 변경되었습니다!",
+            "body_txt": "안녕하세요. {{first_name}} 님.<br\/><br\/>비밀번호가 최근에 변경된 것 같습니다. 이 변경을 하지 않았다면 간단히 이메일 support@highground.com으로 연락하시면 해결해 드립니다.",
+            "link_txt": "로그인"
+        },
+        "UserNotificationEmailChanged": {
+            "sub": "이메일 주소 업데이트 확인",
+            "tea": "해당 알림 이메일이 업데이트되었습니다.",
+            "body_txt": "안녕하세요. {{first_name}} 님.<br><br>해당 알림 이메일 주소가 최근에 변경된 것 같습니다. 이 변경을 하지 않았다면 간단히 이메일 support@highground.com으로 연락하시면 해결해 드립니다."
+        },
+        "OffBoardMember": {
+            "sub": "{{group}} 계정 비활성화됨",
+            "tea": "해당 계정이 비활성화되었습니다.",
+            "body_txt": "안녕하세요. {{first_name}} 님. {{group}} 계정이 비활성화되었습니다. 하지만 계속해서 로그인해서 나머지 포인트를 지출하실 수 있습니다. <br\/><br\/>오류로 잘못 처리되었다고 생각되거나 궁금한 사항이 있으면 이메일 support@highground.com으로 언제든지 문의하십시오.<br\/><br\/>",
+            "thank": "감사합니다. <br\/>{{group}}"
+        },
+        "RecapBuilder": {
+            "rcrr": "<strong>{{RecipientName}}<\/strong> 님이 <a href=\"{{RecUrl}}\"><strong>{{RecTitle}}<\/strong><\/a> 포상을 받았습니다!",
+            "rcr1": "1건의 포상이 {{CompanyRecognitionTime}} 회사에서 제공되었습니다.",
+            "rcrm": "{{CompanyRecognitionNumber}}개의 포상은 {CompanyRecognitionTime} 회사에서 제공되었습니다.",
+            "yst": "어제",
+            "wk": "지난 주",
+            "fr": "금요일 및 주말",
+            "hi": "안녕하세요. {{MyFirstName}} 님.",
+            "yr1": "귀하는 {{CompanyRecognitionTime}} 1건의 포상을 받으셨습니다.",
+            "yrm": "귀하는 {{CompanyRecognitionTime}} {{MyRecognitionNumber}}건의 포상을 받으셨습니다.",
+            "grs": "다른 훌륭한 동료들을 포상하세요!",
+            "vr": "모든 포상 보기",
+            "lwa": "지난 주의 기념일",
+            "twa": "이번 주의 기념일",
+            "lwb": "지난 주의 생일",
+            "twb": "이번 주의 생일",
+            "ta": "오늘의 기념일",
+            "toa": "내일의 기념일",
+            "twka": "이번 주말의 기념일",
+            "pwka": "지난 주말의 기념일",
+            "na": "기념일 없음",
+            "tb": "오늘의 생일",
+            "tob": "내일의 생일",
+            "twkb": "이번 주말의 생일",
+            "pwb": "지난 주말의 생일",
+            "nb": "생일 없음",
+            "ol": "좋아요 1개",
+            "li": "좋아요 {{like_num}}개",
+            "oc": "의견 1개",
+            "co": "의견 {{comment_num}}개",
+            "cya": "{{program_name}} 활동을 확인하고 일정을 지키세요",
+            "dare": "매일",
+            "wkre": "매주",
+            "annis": "{{years}}년, {{date}}",
+            "anni": "1년, {{date}}",
+            "rec": "{{interval}}회 되풀이",
+            "act": "{{interval}} {{company}} 활동 요약",
+            "sma": "<a href=\"{{optout_url}}\">피드에서 모든 {{total}}개의 기념일 보기<\/a><br \/>",
+            "smb": "<a href=\"{{optout_url}}\">피드에서 모든 {{total}}개의 생일 보기<\/a><br \/>",
+            "csma": "<a href=\"{{optout_url}}\">기념일 더 보기<\/a><br \/>",
+            "csmb": "<a href=\"{{optout_url}}\">생일 더 보기<\/a><br \/"
+        },
+        "RecognitionReceived": {
+            "sub": "귀하는 포상 대상자로 선정되었습니다!",
+            "tea": "귀하는 포상 대상자로 선정되었습니다!",
+            "body_txt": "안녕하세요. {{first_name}} 님.<br><br>{{recog_giver}} 님이 \"{{template_title}}\" 배지를 제공해 주셨습니다. 해당 포상을 확인하려면 아래 링크를 클릭하십시오.",
+            "link_txt": "포상 보기"
+        },
+        "ServiceAwardPointMissing": {
+            "sub": "서비스 상에 대한 포인트 없음",
+            "tea": "사용자에 대한 포인트를 발급하세요.",
+            "body_txt": "안녕하세요. {{first_name}} 님.<br><br>{{recipient_full_name}} 님이 배지 <strong>{{badge_title}}<\/strong>을(를) 받았지만 {{point_number}} 포인트를 받지 못했습니다. {{recipient_full_name}} 님에 대한 포인트를 발급하십시오.",
+            "link_txt": "포상 보기"
+        },
+        "PublicRecognitionReceived": {
+            "sub": "접수된 공개 포상\/평가",
+            "tea": "{{recipient_full_name}}에게 공개 포상이 전달되었습니다!",
+            "body_txt": "안녕하세요.<br><br>{{recipient_full_name}} 님께 {{recog_giver}} {{recog_giver_company}}(으)로부터 {{template_title}} 배지가 수여되었고 부상은 다음과 같습니다.<br><br>{{if_canned_message_selected}}<br>회사 평가: {{company_rating_number}} <br>{{recipient_full_name}} 님의 평가: {{recipient_first_name_rating_number}}<br><br>포상을 보려면 아래 링크를 클릭하십시오.<br>",
+            "link_txt": "포상 보기",
+            "none": "없음"
+        },
+        "RecognitionCommentReceived": {
+            "sub": "귀하께 1건의 의견이 있습니다.",
+            "tea": "귀하께 해당 포상에 대한 1건의 새로운 의견이 있습니다.",
+            "body_txt": "안녕하세요. {{first_name}} 님.<br><br>{{commentor_name}} 님이 배지에 의견을 남겼습니다.<br><br>{{comment}}<br>",
+            "optout_txt": "이 포상에 대한 알림을 끄려면 <a href=\"{{optout_url}}\">여기<\/a>를 클릭하십시오.",
+            "link_txt": "의견 보기"
+        },
+        "GiveRecognitionError": {
+            "sub": "해당 포상을 전달할 수 없습니다.",
+            "tea": "해당 포상을 전달하지 못했습니다.",
+            "body_txt": "안녕하세요. {{issuer_name}} 님.<br><br>해당 포상을 전달하지 못했습니다.<br><br>{{error_message}}"
+        },
+        "WelcomeReceived": {
+            "sub": "{{program_name}}에 오신 것을 환영합니다.",
+            "tea": "귀하는 포상 대상자로 선정되었습니다!",
+            "body_txt": "안녕하세요. {{first_name}} 님.<br><br>{{recog_giver}} 님이 \"{{template_title}}\" 배지를 제공해 주셨습니다. 해당 포상을 확인하려면 아래 링크를 클릭하십시오.",
+            "link_txt": "포상 보기"
+        },
+        "Birthday": {
+            "sub": "{{company}}로부터 온 생일 축하 메시지입니다!",
+            "tea": "생일을 축하합니다. {{first_name}} 님!",
+            "body_txt": "안녕하세요. {{first name}} 님.<br><br>{{company}}님이 {{birthday_title}}을(를) 기원합니다. 해당 포상을 보려면 아래 링크를 클릭하십시오.<br>",
+            "link_txt": "해당 포상 보기"
+        },
+        "Anniversary": {
+            "sub": "{{company}}(으)로부터 온 기념일 축하 메시지입니다!",
+            "tea": "기념일을 축하합니다. {{first_name}} 님!",
+            "body_txt": "안녕하세요. {{first name}} 님.<br><br>{{company}}님이 {{birthday_title}}을(를) 기원합니다. 해당 포상을 보려면 아래 링크를 클릭하십시오.<br>",
+            "link_txt": "해당 포상 보기"
+        },
+        "PublicFeedbackReceived": {
+            "sub": "접수\/평가된 공개 피드백",
+            "tea": "안타깝게도, {{recipient_full_name}} 님께 낮은 평점이 주어졌습니다.",
+            "body_txt": "안녕하세요.<br><br>{{recog_giver}} 님이 {{recipient_full_name}} 님께 피드백을 제공했고 다음 내용을 포함시켰습니다.<br><br>회사 평점: {{company_rating_number}}<br>{{recipient_full_name}} 님의 평점: {{recipient_first_name_rating_number}}<br><br>{{if_canned_message_selected}}<br><br><br>감사합니다."
+        },
+        "UserTagged": {
+            "sub": "{{commentor_name}} 님이 의견에서 방금 귀하를 포상 대상자로 언급했습니다.",
+            "tea": "포상 대상자로 언급되셨습니다!",
+            "body_txt": "안녕하세요. {{first_name}} 님.<br\/><br\/>{{commentor_name}} 님이 방금 {{entity_type}}에 대한 의견에서 귀하를 포상 대상자로 언급했습니다.<br\/><br\/>{{comment}}",
+            "link_txt": "의견 보기"
+        },
+        "RecogntionGive": {
+            "sub": "{{first_name}} 님. 동료직원들을 포상할 때입니다.",
+            "tea": "동료직원들을 포상할 때입니다.",
+            "body_txt": "안녕하세요. {{first_name}} 님.<br\/><br\/>{{program_name}}에서 누군가에게 포상을 한지가 꽤 오래된 것 같습니다. 동료직원을 대상으로 공개 포상하는 데는 몇 분 밖에 안걸리지만 효과는 오래 지속될 것입니다.<br><br>참고: {{notes}}",
+            "link_txt": "동료직원 포상"
+        },
+        "SpotBonusRequestToApprover": {
+            "sub": "지명 보너스 상에 대한 검토 필요",
+            "tea": "지명 보너스 상 검토",
+            "body_txt": "<br><br>안녕하세요. {{approver_full_name}} 님. {{giver_full_name}} 님이 {{approver_full_name}} 님에 대한 지명 보너스({{spot_bonus_name}}{{spot_bonus_level}} {{spot_bonus_value}} {{spot_bonus_currency}})를 제출했습니다. 이 상은 검토를 위해 해당 목록에 추가되었습니다. <br><br>{{spot_bonus_message}} 님의 메시지는 <br><br>{{spot_bonus_message}}입니다.<br><br>귀하가 검토할 수 있기 전에 다른 승인자가 지명 보너스를 거부한다면 해당 대기열에서 제거되므로 승인이 더 이상 필요하지 않게 됩니다.",
+            "link_txt": "검토에 대한 지명 보너스 보기"
+        },
+        "SpotBonusRequestToGiver": {
+            "sub": "지명 보너스를 제출해 주셔서 감사합니다.",
+            "tea": "지명 보너스가 제출되었습니다.",
+            "body_txt": "안녕하세요. {{giver_full_name}} 님.<br><br>{{receiver_full_name}} 님에 대한 지명 보너스를 제출해 주셔서 감사합니다. 제출된 자료는 검토를 받게 되고 해당 결과에 대한 알림이 전달됩니다. 참고를 위해 제출하신 정보는 다음과 같습니다.<br><br>이름: {{receiver_full_name}}<br>지명 보너스: {{spot_bonus_name}}{{spot_bonus_level}} - {{spot_bonus_value}} {{spot_bonus_currency}}.<br>메시지: {{spot_bonus_message}}"
+        },
+        "RejectSpotBonusRequest": {
+            "sub": "지명 보너스 상 거부됨",
+            "tea": "해당 지명 보너스 거부됨",
+            "body_txt": "안녕하세요. {{giver_full_name}} 님.<br><br>{{receiver_full_name}} 님({{spot_bonus_name}}{{spot_bonus_level}} - {{spot_bonus_value}} {{spot_bonus_currency}}) 님에 대하여 제출하신 지명 보너스는 다음과 같은 사유로 거부되었습니다.<br><br>{{reject_reason}}<br>{{reject_comment}}<br><br>포함시키신 메시지는 다음과 같습니다.<br>{{spot_bonus_message}}",
+            "dr": "중복 요청",
+            "nmr": "보너스 요구 사항 부족",
+            "slt": "낮은 단계로 다시 제출",
+            "sht": "높은 단계로 다시 제출",
+            "nea": "수상 부적격자",
+            "min": "추가 정보 필요"
+        },
+        "ApproveSpotBonusRequest": {
+            "sub": "지명 보너스 상 승인됨",
+            "tea": "해당 지명 보너스 승인됨",
+            "pub_body_txt": "안녕하세요. {{giver_full_name}} 님.<br><br>{{receiver_full_name}}({{spot_bonus_name}} {{spot_bonus_level}})에 대해 제출하신 지명 보너스가 승인되었습니다. 이 지명 보너스는 이제 수상자에게 보이게 되며 피드에서 사용 가능합니다.",
+            "body_txt": "안녕하세요. {{giver_full_name}} 님.<br><br>{{receiver_full_name}}({{spot_bonus_name}} {{spot_bonus_level}})에 대해 제출하신 지명 보너스가 승인되었습니다. 이 지명 보너스는 이제 수상자에게 보이게 됩니다.",
+            "link_txt": "보려면 여기를 클릭"
+        },
+        "YearSummaryReportReady": {
+            "sub": "프로필 요약을 다운로드할 준비가 되었습니다.",
+            "tea": "프로필 요약을 다운로드할 준비가 되었습니다.",
+            "body_txt": "안녕하세요. {{first_name}} 님.<br><br>이 요약을 다운로드할 준비가되었습니다.<br><br>{{html_body}}",
+            "link_txt": "요약 다운로드",
+            "gls": "목표",
+            "fdb": "피드백",
+            "chk": "체크인",
+            "rcg": "포상"
+        },
+        "PulseSurveyOverdue": {
+            "sub": "{{programName}} 설문조사 미리 알림",
+            "tea": "정서 설문조사 기한이 지났습니다!",
+            "body_txt": "<p style='font-family: Helvetica, sans-serif;'>안녕하세요.<br\/><br\/>아직 아무 연락도 받지 못했습니다. {{responseType}} 귀하의 답변은 항상 익명으로처리됩니다.<br\/><br\/><b>{{question}}<br\/><br\/><br\/>{{answerType}}<\/b><\/p>"
+        },
+        "TangoGiftCard_39443": {
+            "sub": "{{card_name}} 기프트 카드 정보가 안에 들어 있습니다!",
+            "tea": "리워드도 들어 있습니다. 마음껏 누리세요!",
+            "body_txt": "안녕하세요. {{first_name}} 님.<br><br>귀하의 크레딧 사용을 축하 드립니다!<br><br>Global Virtual Visa Reward는 Visa를 받는 곳이면 어디서든 자유롭게 리워드를 누릴 수 있게 해드립니다. 지출을 즉시 이용할 수 있게 해주는 Global Virtual Visa Reward는 좋아하는 온라인 가맹점에서 온라인 쇼핑을 즐기실 수 있게 해드립니다.<br><br>이 메시지를 삭제하지 마십시오. 아래에 사용 URL이 필요합니다. 나중에 쉽게 참조할 수 있도록 이 메시지 사본을 인쇄할 수도 있습니다. 주문 번호는 {{order_number}}입니다.<br><br>감사합니다.",
+            "link_txt": "지금 사용하기",
+            "claim_url_txt": "청구 URL",
+            "gca_txt": "기프트 카드 금액:",
+            "redeem_instructions": "사용 지침: 지금 선불 계정을 활성화하십시오. 이 활성화 코드는 사용하지 않을 경우 본 이메일의 날짜로부터 30일 후에 만료됩니다. 선불 카드는 활성화되면 12개월 후에 만료됩니다.",
+            "disclaimer": "* EntroPay Visa 카드는 Visa Europe의 사용권 허가에 따라 Bank of Valletta 또는 Transact Network Limited에서 발급합니다. 대표 가맹점들은 리워드 스폰서가 아니거나 본 프로모션의 제휴사가 아닙니다. 첨부된 로고 및 기타 상표는 각 대표 회사 및\/또는 계열사의 상표이며 소유물입니다."
+        }
+    }
+}

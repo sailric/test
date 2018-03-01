@@ -1,0 +1,587 @@
+{
+    "eml": {
+        "CoachingNoteReceived": {
+            "sub": "{{manager_full_name}}刚刚给您发来一项指导备注"
+        },
+        "common": {
+            "thank": "谢谢！",
+            "cn": "周期名称",
+            "lu": "上次更新",
+            "gt": "目标类型",
+            "dwn": "下载"
+        },
+        "TransferCreditsComplete": {
+            "sub": "您刚刚获得了代金券！",
+            "tea": "赞！ 您刚刚获得了代金券！",
+            "body_txt": "嗨{{first_name}}，<br>{{sender_name}}刚刚给了您{{credit_amount}}代金券。 别害羞喔—用代金券去打赏同事吧！<br>备注：{{notes}}",
+            "link_txt": "现在给予打赏"
+        },
+        "GoalCycleParticipantUploadProcessed": {
+            "sub": "您上传的目标参与者文档已处理完成。",
+            "tea": "您上传的目标参与者文档已处理完成！",
+            "body_txt": "嗨{{first_name}}，<br><br>您上传的{{cycle_title}}周期参与者文档已处理完成：<br><br>{{audits}}<br>{{summary}}",
+            "link_txt": "查看目标周期",
+            "add": "<strong>{{member_name}}已添加到周期<\/strong><br>",
+            "rem": "<strong>{{member_name}}<\/strong>已从周期移除<br>",
+            "sa": "<strong>{{member_name}}<\/strong>无法添加，因为他\/她已存在于此周期<strong><\/strong><br>",
+            "sr": "<strong>{{member_name}}<\/strong><strong>无<\/strong>法移除<br>",
+            "ea": "<strong>{{member_name}}<\/strong><strong>无<\/strong>法添加，因为出现错误{{error}}<br>",
+            "er": "<strong>{{member_name}}<\/strong><strong>无<\/strong>法移除，因为出现错误{{error}}<br>",
+            "nadd": "<strong>{{number}}<\/strong>位参与者已添加到此周期<br>",
+            "nrem": "<strong>{{number}}<\/strong>位参与者已从此周期移除<br>",
+            "nsa": "<strong>{{number}}<\/strong>参与者<strong>无<\/strong>法添加，因为他\/她已存在于此周期<br>",
+            "nsr": "<strong>{{number}}<\/strong><strong>无<\/strong>法移除<br>",
+            "nea": "<strong>{{number}}无法添加，因为出现错误<\/strong><strong><\/strong><br>",
+            "ner": "<strong>{{number}}<\/strong><strong>无<\/strong>法移除，因为出现错误<br>"
+        },
+        "GoalCycleParticipantUploadError": {
+            "sub": "您上传的参与者文档存在错误。",
+            "tea": "您上传的参与者文档存在错误。",
+            "body_txt": "嗨{{first_name}}，<br><br>您上传的{{cycle_title}}周期参与者文档有下列错误：<br><br>{{audits}}<br>",
+            "link_txt": "查看目标周期",
+            "lfd": "载入文档出现错误<br>",
+            "el": "空白用户列表<br>",
+            "io": "无效操作类型<br><br>",
+            "mo": "混合操作类型<br>",
+            "elu": "载入用户出错<br>",
+            "iun": "无效用户名称{{value}}<br>",
+            "elm": "载入成员出现错误<br>",
+            "im": "无效成员{{value}}<br>"
+        },
+        "GoalCycleBuilt": {
+            "sub": "此目标周期现在可供编辑",
+            "tea": "编辑及发布您的目标周期",
+            "bod": "嗨 {{first_name}}，<br><br>{{goal_cycle_title}}已准备好了！ 请点击以下链接编辑及发布周期：<br>",
+            "lnk": "目标周期"
+        },
+        "GoalCycleCommon": {
+            "que": "如果您有任何问题，请联系{{goal_cycle_creator_full_name}}，电邮地址{{goal_cycle_creator_email}}。",
+            "gpr": "嗨{{full_name}}，<br><br>您所属的业务流程是{{goal_cycle_title}}。",
+            "thk": "如果您有任何问题，请联系{{goal_cycle_creator_full_name}}，电邮地址{{goal_cycle_creator_email}}。<br><br>谢谢！",
+            "vig": "查看目标",
+            "clg": "将目标结项",
+            "wog": "处理目标",
+            "gog": "{{goal_owner_full_name}}的目标",
+            "thkV2": "如果您有任何问题，请联系您的上司。"
+        },
+        "GoalCycleDelivered": {
+            "sub": "是时候去创建目标了",
+            "tea": "@:eml.GoalCycleDelivered.sub",
+            "bod": "{{goal_process}}请点击以下链接，完成您的{{participant_type}}目标。<br><br>您的目标完成期限是{{due_date}}。",
+            "lnk": "创建目标",
+            "not": "管理人备注："
+        },
+        "TemplateGoalAssigned": {
+            "sub": "目标已分配给您！",
+            "tea": "@:eml.TemplateGoalAssigned.sub",
+            "bod": "{{goal_cycle_title}}的目标已分配给您！ 请点击以下链接查看它们并追踪您的进程。 如果您有任何问题，请联系您的上司。",
+            "lnk": "处理目标"
+        },
+        "GoalCommon": {
+            "thk": "如果您有任何问题，请联系{{direct_manager_full_name}}，电邮地址{{direct_manager_email}}。<br><br>谢谢！",
+            "atk": "如果您有任何问题，请联系{{approver_full_name}}，电邮地址{{approver_email}}。<br><br>谢谢！",
+            "rtk": "备注来自{{approver_full_name}}:<br><br>{{note}}<br><br>如果您有任何问题，请联系{{approver_full_name}}，电邮地址{{approver_email}}。<br><br>谢谢！"
+        },
+        "GoalUpdateOverdueReminder": {
+            "sub": "目标更新已逾期！",
+            "tea": "@:eml.GoalUpdateOverdueReminder.sub",
+            "bod": "嗨{{full_name}}，<br><br>您的{{goal_name}} {{last_updated}}。 请更新您的目标。<br><br>{{manager_notes}}",
+            "lnk": "@:eml.GoalCycleCommon.clg"
+        },
+        "CloseAdhocGoalPrompt": {
+            "sub": "是时候去将您的目标结项了！",
+            "tea": "@:eml.CloseAdhocGoalPrompt.sub",
+            "bod": "嗨{{first_name}}，<br><br>您的个人目标已接近结项时间。 请关闭你的目标。<br><br>{{Goals}}",
+            "lnk": "@:eml.GoalCycleCommon.clg"
+        },
+        "GoalCycleOwnershipTransferred": {
+            "sub": "目标周期的职权已移交给您",
+            "tea": "@:eml.GoalCycleOwnershipTransferred.sub",
+            "bod": "嗨{{first_name}}，<br><br>您现在是以下目标周期的负责人。<br><br>{{goal_cycles_table}}"
+        },
+        "GoalOwnershipTransferred": {
+            "sub": "目标的的职权已经移交给您",
+            "tea": "@:eml.GoalOwnershipTransferred.sub",
+            "bod": "嗨{{first_name}}，<br><br>您现在是以下目标的负责人。<br><br>{{goals_table}}"
+        },
+        "GoalApproverTransferred": {
+            "sub": "目标的核准权已经移交给您",
+            "tea": "@:eml.GoalApproverTransferred.sub",
+            "bod": "嗨{{first_name}}，<br><br>您现在是以下目标的核准人。<br><br>{{goals_table}}"
+        },
+        "GoalCheckIn": {
+            "sub": "检查您的进程！",
+            "tea": "@:eml.GoalCheckIn.sub",
+            "bod": "嗨{{first_name}}，<br><br>您正在参与目标周期\"{{CycleTitle}}\"，所需的更新频率为{{CheckInFrequency}}。 追踪您的进程：<br\/><br\/>{{html_body}} 谢谢！<br><br>",
+            "OnTimeGoalsLbl": "以下目标已更新：<br><br>",
+            "LateGoalsLbl": "以下目标有延误：<br><br>",
+            "ClosedGoalsLbl": "以下目标已被提交以进行结项：<br><br>",
+            "SubmittedForClosureGoalsLbl": "以下目标已结项：<br><br>"
+        },
+        "ApproverOKRStatus": {
+            "sub": "员工目标状态",
+            "tea": "员工目标活动简报",
+            "bod": "上司名称：{{manager_name}}<br><br>{{email_body}}"
+        },
+        "CloseSingleAdhocGoalReminder": {
+            "sub": "您的目标结项时间已到",
+            "tea": "@:eml.CloseSingleAdhocGoalReminder.sub",
+            "bod": "嗨{{full_name}}，<br><br>您的目标{{goal_name}}已到了结项时间。 请关闭你的目标。<br><br>{{manager_notes}}",
+            "lnk": "@:eml.GoalCycleCommon.clg"
+        },
+        "CommentGoal": {
+            "sub": "{{name}}更新了一个目标",
+            "tea": "目标有新评语！",
+            "bod": "Hi {{first_name}}，<br><br>{{commentor_name}}更新了一个与您有关的目标。 单击下方内容以查看。",
+            "lnk": "@:eml.GoalCycleCommon.vig"
+        },
+        "GoalsSetApproved": {
+            "sub": "您的目标已获得核准",
+            "tea": "您的目标已获得核准！",
+            "bod": "嗨{{first_name}}，<br><br>您在{{goal_cycle_title}}的目标已获得{{approver_full_name}}核准，祝贺您！ 要现在进入您的目标，请点击以下链接：",
+            "lnk": "@:eml.GoalCycleCommon.vig"
+        },
+        "GoalsClosureApproved": {
+            "sub": "您的一条结项请求已被核准",
+            "tea": "您的目标现在已结项！",
+            "bod": "嗨{{first_name}}，<br><br>{{approver_full_name}}已核准了您在{{goal_cycle_title}}业务流程中的目标结项请求。 要查看您已结项的目标，请点击以下链接。",
+            "lnk": "@:eml.GoalCycleCommon.vig"
+        },
+        "GoalSetRejected": {
+            "sub": "您的其中一个目标已被退回以进行修改",
+            "tea": "您的目标已被退回以进行修改",
+            "bod": "嗨{{first_name}}，<br><br>您在{{goal_cycle_title}}的目标已被{{approver_full_name}}退回以进行修改。<br><br>请点击以下链接查看目标。",
+            "lnk": "@:eml.GoalCycleCommon.vig"
+        },
+        "GoalCloseRejected": {
+            "sub": "您的其中一个目标须要被更新才可以结项",
+            "tea": "您的其中一个目标需要更新才可以结项！",
+            "bod": "嗨{{first_name}}，<br><br>{{approver_full_name}}已退回您针对{{goal_cycle_title}}业务流程中的目标{{goal_name}}提出的结项请求。 您必须进行修改才可以继续。 请点击以下链接进行修改。",
+            "lnk": "@:eml.GoalCycleCommon.vig"
+        },
+        "GoalSetRequested": {
+            "sub": "{{name}}提交了一个目标以获得您的核准。",
+            "tea": "这些目标需要您的核准！",
+            "bod": "嗨{{first_name}}，<br><br>请点击以下链接审核由{{goal_owner_full_name}}在{{goal_cycle_title}}提交的目标。",
+            "lnk": "@:eml.GoalCycleCommon.gog"
+        },
+        "GoalCloseRequested": {
+            "sub": "{{name}}提交了目标以获得您的核准和结项。",
+            "tea": "已请求目标结项！",
+            "bod": "嗨{{first_name}}，<br><br>{{goal_owner_full_name}}在{{goal_cycle_title}}业务流程中提交了一个目标，并需要您的核准以结项。 请点击以下链接审核{{goal_owner_full_name}}提交的目标。",
+            "lnk": "@:eml.GoalCycleCommon.gog"
+        },
+        "GoalCreatedForYou": {
+            "sub": "{{name}}已为您创建了一个目标。",
+            "tea": "有人为您创建了一个目标！",
+            "bod": "嗨{{first_name}}，<br><br>{{goal_creator_full_name}}已为您创建了目标&#39;&#39;{{goal_name}}&#39;&#39;。 请点击以下链接进入此目标。",
+            "lnk": "@:eml.GoalCycleCommon.vig",
+            "thk": "如果您有任何问题，请联系{{goal_creator_full_name}}，电邮地址{{goal_creator_email}}。<br><br>谢谢！"
+        },
+        "CloseGoalPrompt": {
+            "sub": "您的目标结项时间已到！",
+            "tea": "@:eml.CloseGoalPrompt.sub",
+            "bod": "嗨{{first_name}}，<br><br>{{goal_cycle_title}}即将结束，所以您必须更新和结项您的目标。 请点击以下链接更新您的期末进程并将您的目标结项：",
+            "lnk": "@:eml.GoalCycleCommon.clg",
+            "thk": "@:eml.GoalCycleCommon.thkV2"
+        },
+        "GoalCreationReminder": {
+            "sub": "您的目标快要到期了！",
+            "tea": "@:eml.GoalCreationReminder.sub",
+            "bod": "嗨{{first_name}}，<br><br>请注意！ 您的{{participant_type}}目标在{{goal_cycle_title}}业务流程将于{{due_date}}到期。 至少有一个目标还没有被提交。 请点击以下链接去完成：",
+            "lnk": "@:eml.GoalCycleCommon.wog",
+            "thk": "@:eml.GoalCycleCommon.thkV2"
+        },
+        "GoalOverdueReminder": {
+            "sub": "喂…您的目标已逾期了。",
+            "tea": "@:eml.GoalCreationReminder.sub",
+            "bod": "嗨{{first_name}}，<br><br>提醒您一下，您需要输入{{goal_cycle_title}}的目标，期限是{{due_date}}。 请单击以下链接以完成输入。",
+            "lnk": "@:eml.GoalCycleCommon.wog",
+            "thk": "@:eml.GoalCycleCommon.thkV2"
+        },
+        "CloseGoalOverdue": {
+            "sub": "别忘记将您的目标结项！",
+            "tea": "@:eml.CloseGoalOverdue.sub",
+            "bod": "嗨{{first_name}}，<br><br>您在{{goal_cycle_title}}的目标的期限是{{close_due_date}}。 请点击以下链接以对您的进程作出最后更新及结项：",
+            "lnk": "@:eml.GoalCycleCommon.wog",
+            "thk": "@:eml.GoalCycleCommon.thkV2"
+        },
+        "ParticipantType": {
+            "mem": "个人",
+            "tm": "部门",
+            "cmp": "公司"
+        },
+        "Moved360ToRequesterAssess": {
+            "sub": "请完成您对于{{subject_name}}的评估",
+            "tea": "您有一个新的请求",
+            "body_txt": "嗨{{first_name}}，<br><br>所有参与者已对{{cycle_title}}关于{{subject_name}}的请求提供回应。 请单击以下链接以完成您的评估。",
+            "link_txt": "查看360全面评估"
+        },
+        "Moved360ToMarkComplete": {
+            "sub": "请审阅和完成{{cycle_title}}的{{subject_name}}",
+            "tea": "您有一个新的请求",
+            "body_txt": "嗨{{first_name}}，<br><br>所有参与者已对{{cycle_title}}关于{{subject_name}}的请求提供回应。 请单击以下链接以完成您的360全面评估。",
+            "link_txt": "查看360全面评估"
+        },
+        "Unsubmit360FeedbackSession": {
+            "sub": "{{unsubmitter_full_name}}已取消提交{{cycle_title}}",
+            "sub_anonymous": "有人已取消提交{{cycle_title}}",
+            "tea": "已取消提交反馈",
+            "body_txt": "嗨 {{first_name}}，<br><br>{{unsubmitter_full_name}}已取消提交他们对您为 {{cycle_title}} 关于{{subject_name}}所发出请求的回应。 请单击以下链接查看此请求。",
+            "body_txt_anonymous": "嗨{{first_name}}，<br><br>一位参与者已取消提交他们对您为{{cycle_title}} 关于{{subject_name}}所发出请求的回应。 请单击以下链接查看此请求。",
+            "link_txt": "查看360全面评估"
+        },
+        "NotifiyUnshareToSubject": {
+            "sub": "{{cycle_title}} 已重启以进行修改",
+            "tea": "已重启反馈",
+            "body_txt": "嗨{{first_name}}，<br><br>之前完成的{{cycle_title}}已被{{reopener_full_name}}重启以进行修改。 一旦其再次被标记为已完成，您将收到通知。"
+        },
+        "Unsubmit360FeedbackSessionByRequester": {
+            "sub": "您对{{cycle_title}}的回应已取消提交。",
+            "tea": "已取消提交反馈",
+            "body_txt": "嗨 {{first_name}}，<br><br>您对{{cycle_title}}的回应已被{{reopener_full_name}}取消提交，您需要进行修改。 请审阅您之前的回应，并进行必要的修改，然后再提交。",
+            "link_txt": "查看360全面评估"
+        },
+        "Feedback360SubjectSessionRequested": {
+            "sub": "{{requester_name}}已请求进行一项自我反思",
+            "tea": "您有一个新的请求",
+            "body_txt": "嗨{{first_name}}，<br><br>{{requester_name}}已在<strong>{{cycle_title}}<\/strong>已请求进行一项自我反思。 单击下面以开始。",
+            "link_txt": "开始"
+        },
+        "Feedback360ReviewerSessionRequested": {
+            "sub": "{{requester_name}}请求您对{{subject_name}}提供反馈",
+            "tea": "您有一个新的请求",
+            "body_txt": "还{{first_name}}，<br><br>{{requester_name}}已请求您对{{subject_name}}在<strong>{{cycle_title}}<\/strong>提供反馈。 单击下面以开始。",
+            "link_txt": "开始"
+        },
+        "FeedbackSessionRequested": {
+            "sub": "关于{{cycle_title}}的新请求",
+            "tea": "您有一个新的请求",
+            "body_txt": "嗨{{first_name}}，<br><br>{{subject_name}}希望您能完成<strong>{{cycle_title}}<\/strong>。",
+            "link_txt": "查看请求"
+        },
+        "FeedbackSessionDeclined": {
+            "sub": "关于{{cycle_title}的请求已被拒绝。",
+            "sub_anonymous": "有人拒绝了您关于{{cycle_title}}的请求。",
+            "tea": "您的请求已被拒绝。",
+            "body_txt": "嗨{{first_name}}，<br><br>{{reviewer_name}}已拒绝了您关于<strong>{{cycle_title}}<\/strong>的请求。 <br><br>拒绝原因：<br><br>{{decline_note}}<br>",
+            "body_txt_anonymous": "嗨{{first_name}}，<br><br>有人拒绝了您关于<strong>{{cycle_title}}<\/strong>的请求。 <br><br>拒绝原因：<br><br>{{decline_note}}<br>",
+            "link_txt": "查看备注"
+        },
+        "SelfEvaluationSubmitted": {
+            "sub": "{{subject_name}}完成了{{cycle_title}}",
+            "tea": "定期例会已完成",
+            "body_txt": "嗨{{first_name}}，<br><br>{{subject_name}}已完成了<strong>{{cycle_title}}<\/strong>。",
+            "link_txt": "查看"
+        },
+        "FeedbackSessionSubmitted": {
+            "sub": "收到了{{cycle_title}}，来自{{reviewer_name}}",
+            "sub_anonymous": "有人完成了您关于{{cycle_title}}的请求",
+            "tea": "已收到反馈",
+            "body_txt": "嗨{{first_name}}，<br><br>{{reviewer_name}}已完成了您对于<strong>{{cycle_title}}<\/strong>的请求。",
+            "body_txt_anonymous": "嗨{{first_name}}，<br><br>有人已对您关于<strong>{{cycle_title}}<\/strong>的请求提供反馈。",
+            "link_txt": "查看"
+        },
+        "EvaluateOthersSubmitted": {
+            "sub": "收到了{{cycle_title}}，来自{{reviewer_name}}，关于{{subject_name}}。",
+            "sub_anonymous": "有人完成了您为{{cycle_title}}关于{{subject_name}}所发出的请求。",
+            "tea": "已收到反馈",
+            "body_txt": "嗨{{first_name}}，<br><br>{{reviewer_name}}已完成了您为<strong>{{cycle_title}}<\/strong>关于{{subject_name}}所发出的请求。",
+            "body_txt_anonymous": "嗨{{first_name}}，<br><br>有人已对您为{{cycle_title}}关于{{subject_name}}所发出的请求提供反馈。",
+            "link_txt": "查看"
+        },
+        "GiveFeedbackSubmitted": {
+            "sub": "收到了{{cycle_title}}，来自{{reviewer_name}}",
+            "tea": "已收到反馈",
+            "body_txt": "嗨{{first_name}}，<br><br>{{reviewer_name}}已给您<strong>{{cycle_title}}<\/strong>。",
+            "link_txt": "查看"
+        },
+        "Share360WithSubject": {
+            "sub": "{{requester_name}}已完成和分享您的{{cycle_title}}",
+            "tea": "您可查看您的360全面评估审核",
+            "body_txt": "{{requester_name}}已完成和分享您的{{cycle_title}}。 单击下面以开始审核并记录为完成。",
+            "link_txt": "审阅"
+        },
+        "SelfEvaluationDelivered": {
+            "sub": "关于{{cycle_title}}的新请求",
+            "tea": "请完成您的定期例会",
+            "body_txt": "嗨{{first_name}}，<br><br><strong>{{group_name}}<\/strong>希望您能完成{{cycle_title}}。",
+            "link_txt": "查看请求"
+        },
+        "FeedbackCheckInApproved": {
+            "sub": "您的例会已获得核准！",
+            "tea": "@:eml.FeedbackCheckInApproved.sub",
+            "body_txt": "嗨{{first_name}}，<br><br>您的高层上司已核准您在<strong>{{cycle_title}}<\/strong>的例会！ 单击下面以审阅您的上司所记录的任何备注。",
+            "link_txt": "确认您的例会"
+        },
+        "FeedbackCheckInNeedsSignOff": {
+            "sub": "一项例会等待您的签发。",
+            "tea": "一项例会等待您的签发。",
+            "body_txt": "嗨{{first_name}}，<br><br>一项例会等待您的签发。 请单击以下链接以查看此例会。",
+            "link_txt": "签发"
+        },
+        "FeedbackCheckInManagerNotesAvailable": {
+            "sub": "{{name}}已完成了{{title}}！",
+            "tea": "{{name}}已完成了{{title}}！",
+            "body_txt": "嗨{{first_name}}，<br><br>{{reviewer_name}}已完成了<strong>{{cycle_title}}<\/strong>。 如果您的上司添加了任何备注，您可以单击以下链接以进行审阅。",
+            "link_txt": "查看例会"
+        },
+        "TalentInsightAssessmentDelivered": {
+            "sub": "是时候去完成您的才干评价了",
+            "tea": "请完成您的团队评估",
+            "body_txt": "嗨{{first_name}}，<br><br>是时候完成您团队的才干评价了！ 单击下面的链接以开始。",
+            "link_txt": "完成才干评价"
+        },
+        "FeedbackRequestExpiring": {
+            "sub": "对于{{cycle_title}}的请求将于{{expire_in_days}}天过期",
+            "tea": "反馈请求即将过期",
+            "body_txt": "嗨{{first_name}}，<br><br>{{subject_name}}对{{cycle_title}}在{{number_of_days}}天前向您提出了请求。 此项申请会在{{expire_in_days}}天后过期。 请花时间在期限前完成。",
+            "link_txt": "查看请求"
+        },
+        "FeedbackSessionRated": {
+            "sub": "您收到了来自{{subject_name}}的备注。",
+            "tea": "已收到备注",
+            "body_txt": "嗨{{first_name}}，<br><br>{{subject_name}}对于您对<strong>{{cycle_title}}<\/strong>的反馈发出了一个备注。<br>",
+            "link_txt": "查看备注"
+        },
+        "FeedbackCardAvailable": {
+            "sub": "有新反馈",
+            "tea": "有反馈表格",
+            "body_txt": "嗨{{first_name}}，<br><br><strong>{{cycle_title}}<\/strong>现在可供您使用。<br\/>",
+            "link_txt": "请求反馈"
+        },
+        "FeedbackCycleClosedOrArchived": {
+            "sub": "{{cycle_title}}不可再被使用",
+            "tea": "已不存在此反馈",
+            "body_txt": "嗨{{first_name}}，<br><br><strong>{{cycle_title}}<\/strong>已被您的管理人{{cycle_status}}，所以您无法完成。 如果您以前有使用过{{cycle_title}}，您将{{access_type}}可用获得那些记录。<br\/><br\/>如果您有任何问题，请联系{{admin_name}}，电邮地址{{admin_email}}。 <br\/> <br\/>"
+        },
+        "FeedbackSessionUnsubmitted": {
+            "sub": "{{unsubmitter_full_name}}取消提交了一项例会。",
+            "tea": "{{cycle_title}}的检视已被取消提交",
+            "body_txt": "敬爱的{{reviewers_full_names}}，{{unsubmitter_full_name}}已取消了{{cycle_title}}的提交以进行修改。 {{subject_full_name}}现在可以进行编辑及再次提交。",
+            "link_txt": "例会"
+        },
+        "FeedbackSessionReopenedByManager": {
+            "sub": "您的例会已被重启",
+            "tea": "标题{{cycle_title}}的检视已被重启",
+            "body_txt": "敬爱的{{subject_full_name}}，您的{{cycle_title}}已被重启以进行修改。 如果您有任何问题，请联系您的上司{{managers_full_name}}。",
+            "link_txt": "例会"
+        },
+        "EmployeeOnboarded": {
+            "sub": "您获邀加入{{company}}",
+            "tea": "您获邀加入{{company}}",
+            "body_txt": "欢迎来到{{company}}，{{first_name}}！ <br\/><br\/>{{company}}隆重宣布一个强大的新工具，能有效协助您前所未有地投入工作中。",
+            "body_supplement_txt": "<br\/><br\/><strong>您的用户名称是：{{username}} <\/strong><br\/><br\/>此链接将于{{hours}}小时后过期。 <br\/>假如您遇到任何困难，请把app.highground.com贴到您的浏览器并单击重设我的密码（Reset My Password）。<br\/><br\/>有问题吗？<br\/>support@highground.com",
+            "link_txt": "确认您的账户"
+        },
+        "PasswordResetRequestCreated": {
+            "sub": "重设您的HighGround密码",
+            "tea": "重设您的HighGround密码",
+            "body_txt": "嗨{{first_name}，<br\/><br\/>您忘记密码了？ 没关系！ <br\/><br\/>单击下面的按钮或此链接：{{link_url}} 它会在一个小时后过期。 <br\/><br\/>您没有提出这个请求？ 请忽略这个邮件。",
+            "link_txt": "重设您的密码"
+        },
+        "PasswordChanged": {
+            "sub": "确认密码重设",
+            "tea": "您的密码已被更改！",
+            "body_txt": "嗨{{first_name}}，<br\/><br\/>看来您的密码最近被更改了。 如果您没有提出这个请求，请联系support@highground.com，我们会处理。",
+            "link_txt": "登录"
+        },
+        "UserNotificationEmailChanged": {
+            "sub": "电邮地址更新确认",
+            "tea": "您的通知电邮已被更新。",
+            "body_txt": "嗨{{first_name}}，<br><br>看来您的通知电邮最近被更改了。 如果您没有提出这个请求，请联系support@highground.com，我们会处理。"
+        },
+        "OffBoardMember": {
+            "sub": "{{group}}账户已停用",
+            "tea": "您的账户已被停用",
+            "body_txt": "嗨{first_name}}，<br\/><br\/>您的{{group}}账户已被停用。 您仍然可以登录及使用您剩余的积分。 <br\/><br\/>如果您认为此项操作有错，或您有任何问题，请联系support@highground.com。",
+            "thank": "谢谢，<br\/>{{group}}"
+        },
+        "UsernameRequestCreated": {
+            "sub": "用户名请求",
+            "tea": "这是您的用户名。",
+            "body_txt": "嗨 {{first_name}}，<br\/><br\/>您忘记用户名了？ 没关系！ 您的用户名：<br\/><br\/><a href='{{link_url}}'>{{username}}<\/a>",
+            "link_txt": "登录"
+        },
+        "RecapBuilder": {
+            "rcrr": "<strong>{{RecipientName}}<\/strong>收到了一个<a href=\"{{RecUrl}}\"><strong>{{RecTitle}}<\/strong><\/a>打赏！",
+            "rcr1": "一份打赏在公司{{CompanyRecognitionTime}}中被送出。",
+            "rcrm": "{{CompanyRecognitionNumber}}份打赏在{{CompanyRecognitionTime}}中被送出。",
+            "yst": "昨天",
+            "wk": "上周",
+            "fr": "在周五和周末",
+            "hi": "嗨{{MyFirstName}}，",
+            "yr1": "您获得了1份打赏{{CompanyRecognitionTime}}。",
+            "yrm": "您获得了{{MyRecognitionNumber}}份打赏{{CompanyRecognitionTime}}。",
+            "grs": "去打赏其他人吧！",
+            "vr": "查看所有打赏",
+            "lwa": "上周的周年纪念",
+            "twa": "本周的周年纪念",
+            "lwb": "上周的生日",
+            "twb": "本周的生日",
+            "ta": "今天的周年纪念",
+            "toa": "明天的周年纪念",
+            "twka": "本周末的周年纪念",
+            "pwka": "上周末的周年纪念",
+            "na": "没有周年纪念",
+            "tb": "今天的生日",
+            "tob": "明天的生日",
+            "twkb": "本周的生日",
+            "pwb": "上周末的生日",
+            "nb": "没有生日",
+            "ol": "1个点赞",
+            "li": "{{like_num}}个点赞",
+            "oc": "1个评语",
+            "co": "{{comment_num}}个评语",
+            "cya": "查看您的{{program_name}}活动，保持消息灵通",
+            "dare": "每天",
+            "wkre": "每周",
+            "annis": "在{{date}}满{{years}}年",
+            "anni": "在{{date}}满1年",
+            "rec": "{{interval}}回顾",
+            "act": "{{interval}} {{company}}活动简报",
+            "sma": "<a href=\"{{optout_url}}\">查看新闻流里的所有{{total}}个周年纪念<\/a><br \/>",
+            "smb": "<a href=\"{{optout_url}}\">查看新闻流里的所有{{total}}个生日<\/a><br \/>",
+            "csma": "<a href=\"{{optout_url}}\">查看更多周年纪念<\/a><br \/>",
+            "csmb": "<a href=\"{{optout_url}}\">查看更多生日<\/a>"
+        },
+        "RecognitionReceived": {
+            "sub": "您获得了打赏！",
+            "tea": "您获得了打赏！",
+            "body_txt": "嗨{{first_name}}，<br><br>{{recog_giver}}给了您一个\"{{template_title}}\"徽章！ 单击下面的链接以观看您的打赏：",
+            "link_txt": "查看打赏"
+        },
+        "ServiceAwardPointMissing": {
+            "sub": "服务奖缺少积分",
+            "tea": "请向用户发出积分",
+            "body_txt": "嗨{{first_name}}，<br><br>{{recipient_full_name}}获得了<strong>{{badge_title}}<\/strong>徽章但没有获得{{point_number}}积分。 请向{{recipient_full_name}}发出积分。",
+            "link_txt": "查看打赏"
+        },
+        "PublicRecognitionReceived": {
+            "sub": "已获得的公开打赏\/评分",
+            "tea": "一份公开打赏已被赠送给{{recipient_full_name}}！",
+            "body_txt": "嗨，<br><br>{{recipient_full_name}}从{{recog_giver}} {{recog_giver_company}}获得了{{template_title}} 徽章并包括以下：<br><br>{{if_canned_message_selected}}<br>公司评分：{{company_rating_number}}<br>{{recipient_full_name}}的评分：{{recipient_first_name_rating_number}}<br><br> 单击下面的链接以查看打赏：<br>",
+            "link_txt": "查看打赏",
+            "none": "没有"
+        },
+        "RecognitionCommentReceived": {
+            "sub": "您有1个新评语",
+            "tea": "您的打赏记录上有1个新评语！",
+            "body_txt": "嗨{{first_name}}，<br><br>{{commentor_name}}刚刚给您的徽章留言：<br><br>{{comment}}<br>",
+            "optout_txt": "单击<a href=\"{{optout_url}}\">这<\/a>里以关闭有关这个打赏的通知",
+            "link_txt": "查看评语"
+        },
+        "GiveRecognitionError": {
+            "sub": "无法交付您的打赏",
+            "tea": "无法交付您的打赏。",
+            "body_txt": "嗨{{issuer_name}}，<br><br>您的打赏无法交付：<br><br>{{error_message}}"
+        },
+        "WelcomeReceived": {
+            "sub": "欢迎来到{{program_name}}",
+            "tea": "您获得了打赏！",
+            "body_txt": "嗨{{first_name}}，<br><br>{{recog_giver}}给了您一个\"{{template_title}}\"徽章！ 单击下面的链接以观看您的打赏：",
+            "link_txt": "查看打赏"
+        },
+        "Birthday": {
+            "sub": "{{company}}祝您生日快乐！",
+            "tea": "生日快乐，{{first_name}}！",
+            "body_txt": "嗨{{first_name}}，<br><br>{{company}}祝您{{birthday_title}} 单击下面的链接以观看您的打赏。<br\/>",
+            "link_txt": "观看您的打赏："
+        },
+        "Anniversary": {
+            "sub": "{{company}}祝您周年纪念快乐！",
+            "tea": "周年纪念快乐，{{first_name}}！",
+            "body_txt": "嗨{{first_name}}，<br><br>{{company}}祝您{{birthday_title}} 单击下面的链接以观看您的打赏。<br\/>",
+            "link_txt": "观看您的打赏："
+        },
+        "PublicFeedbackReceived": {
+            "sub": "已收到\/评分的公开反馈",
+            "tea": "抱歉，{{recipient_full_name}}获得了一个低评分",
+            "body_txt": "嗨，<br><br>{{recog_giver}}向{{recipient_full_name}}提供了反馈并包括以下：公司评分：<br><br>{{company_rating_number}}<br>{{recipient_full_name}}的评分：{{recipient_first_name_rating_number}}<br><br>{{if_canned_message_selected}}<br><br><br>谢谢！"
+        },
+        "UserTagged": {
+            "sub": "{{commentor_name}}刚刚在一个留言里提及您！",
+            "tea": "您被提及了！",
+            "body_txt": "嗨{{first_name}}，<br\/><br\/>{{commentor_name}}刚刚在一个关于{{entity_type}}的留言里提到您：<br\/><br\/>{{comment}}",
+            "link_txt": "查看评语"
+        },
+        "RecogntionGive": {
+            "sub": "{{first_name}}，",
+            "tea": "是时候去打赏别人了",
+            "body_txt": "嗨{{first_name}}，<br\/><br\/>您有好一段时间没有在{{program_name}}打赏任何人了。 花一点时间去公开打赏同事是很有意义的。<br><br>备注：{{notes}}",
+            "link_txt": "打赏别人"
+        },
+        "SpotBonusRequestToApprover": {
+            "sub": "短期奖金需要审核",
+            "tea": "审核短期奖金",
+            "body_txt": "嗨{{approver_full_name}}，<br><br>{{giver_full_name}}已申请了({{spot_bonus_name}}{{spot_bonus_level}} {{spot_bonus_value}} {{spot_bonus_currency}})给予{{receiver_full_name}}。 此项奖励已添加到您的审阅列表。 <br><br>所包括的信息{{giver_full_name}}如下<br><br>{{spot_bonus_message}}<br><br> 请注意，如果在您进行审阅前有另一位核准者拒绝了此项短期奖金，它会从您的队列中被移除，而且不再需要您的核准。",
+            "link_txt": "查看短期奖金以进行审阅"
+        },
+        "RemindOverdueSpotBonusRequest": {
+            "sub": "提醒：短期奖金需要审阅",
+            "tea": "审核短期奖金",
+            "body_txt": "嗨 {{approver_full_name}}，<br><br>您的待办列表中有一份需要审阅的短期奖金。 请点击下方的蓝条，花点时间查看此短期奖金。",
+            "link_txt": "查看短期奖金以进行审阅"
+        },
+        "SpotBonusRequestToGiver": {
+            "sub": "感谢您提交短期奖金申请",
+            "tea": "您已申请的短期奖金",
+            "body_txt": "嗨{{giver_full_name}}，<br><br>谢谢您为{{receiver_full_name}}申请短期奖金。 您提交的申请将被审阅，而您会收到结果通知。 您提交了以下信息：<br><br>姓名：{{receiver_full_name}} 短期奖金：{{spot_bonus_name}}<br>{{spot_bonus_level}} 金额为 {{spot_bonus_value}} {{spot_bonus_currency}}。<br>信息：{{spot_bonus_message}}"
+        },
+        "RejectSpotBonusRequest": {
+            "sub": "短期奖金被拒绝",
+            "tea": "您的短期奖金已被拒绝",
+            "body_txt": "嗨{{giver_full_name}}，<br><br>您为{{receiver_full_name}}申请的短期奖金（{{spot_bonus_name}}{{spot_bonus_level}}给予{{spot_bonus_value}} {{spot_bonus_currency}}.）<br><br>已因以下理由被拒绝：{{reject_reason}}<br>评论：{{reject_comment}}<br><br>您所包括的原始信息如下：<br>{{spot_bonus_message}}",
+            "dr": "重复请求",
+            "nmr": "无法达到奖金的条件",
+            "slt": "在更低的一层重新申请",
+            "sht": "在更高的一层重新申请",
+            "nea": "此员工不符合奖金资格",
+            "min": "需要更多信息"
+        },
+        "ApproveSpotBonusRequest": {
+            "sub": "短期奖金已获核准",
+            "tea": "您的短期奖金已获核准",
+            "pub_body_txt": "嗨{{giver_full_name}}，<br><br>您为{{receiver_full_name}}申请的短期奖金（{{spot_bonus_name}}{{spot_bonus_level}}）已获核准。 短期奖金获得者现在可以看到此项奖金，并会在新闻流中出现。",
+            "body_txt": "嗨{{giver_full_name}}，<br><br>您为{{receiver_full_name}}申请的短期奖金（{{spot_bonus_name}}{{spot_bonus_level}}）已获核准。 短期奖金获得者现在可以看到此项奖金。",
+            "link_txt": "单击此处以查看"
+        },
+        "YearSummaryReportReady": {
+            "sub": "概况简报现在可被下载",
+            "tea": "@:eml.YearSummaryReportReady.sub",
+            "body_txt": "嗨{{first_name}}，<br><br>此简报现在已可下载。<br><br>{{html_body}}",
+            "link_txt": "下载总结",
+            "gls": "目标",
+            "fdb": "反馈",
+            "chk": "例会",
+            "rcg": "打赏"
+        },
+        "CheckinPDF": {
+            "sub": "例会PDF已可下载。",
+            "tea": "@:eml.CheckinPDF.sub",
+            "body_txt": "嗨 {{first_name}}。 <br\/><br\/>您关于{{cycle_title}} 的例会PDF请求已生成。 请点击下方的蓝条，下载您的文件。"
+        },
+        "ReportReady": {
+            "sub": "您的报告已可下载！",
+            "tea": "@:eml.ReportReady.sub",
+            "body_txt": "嗨 {{first_name}}。 <br\/><br\/>您的报告 {{report_name}}已就绪！ 请点击以下按钮进入报告下载中心：",
+            "dnd": "下载数据",
+            "thank": "或点击此链接：<a href=\"{{url}}\">此处<\/a>。 它将在24小时后过期，并且仅可点击一次。 如果您无法下载文件，您将需要再次提交请求。 谢谢！"
+        },
+        "PulseSurveyOverdue": {
+            "sub": "{{programName}}调查提醒",
+            "tea": "您的情感调查已逾期了！",
+            "body_txt": "<p style='font-family: Helvetica, sans-serif;'>嗨，<br\/><br\/>我们还没有收到您的回应。 {{responseType}}您的反馈将一直保持匿名。<br\/><br\/><b>{{question}}<br\/><br\/><br\/>{{answerType}}<\/b><\/p>"
+        },
+        "TangoGiftCard_39443": {
+            "sub": "您的{{card_name}}礼品卡信息就在里面！",
+            "tea": "奖励已附赠在内，恭喜！",
+            "body_txt": "<br><br><br><br>嗨{{first_name}}，恭喜您兑换您的代金券！全球虚拟Visa奖励让您在几乎任何接受Visa的地方都能自由享用您的奖励。 通过即时消费，全球虚拟Visa奖励让您在喜爱的网上商户享受购物乐趣。<br><br>请勿删除此信息— 您可以打印此信息以供日后使用。 您的订单号码是{{order_number}}。<br><br>谢谢！",
+            "link_txt": "现在兑换",
+            "claim_url_txt": "认领URL",
+            "gca_txt": "礼品卡金额：",
+            "redeem_instructions": "兑换说明：请在今天激活您的预付账户。 假如激活密码不获使用，密码将于此电邮日期的三十天后过期。 预付卡将于激活后12个月过期。",
+            "disclaimer": "* EntroPay Visa 卡由 Bank of Valletta 银行或 Transact Network Limited 公司根据Visa Europe 执照发出。 商户并非本项奖励的提供方，且不隶属于本促销方案。 附带的标识或其它标志是每一个企业或其下属企业的商标。"
+        }
+    }
+}

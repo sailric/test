@@ -1,0 +1,537 @@
+{
+    "eml": {
+        "CoachingNoteReceived": {
+            "sub": "{{manager_full_name}} 剛剛給了您一份指導便函"
+        },
+        "common": {
+            "thank": "謝謝！",
+            "cn": "週期名稱",
+            "lu": "上次更新",
+            "gt": "目標類型"
+        },
+        "TransferCreditsComplete": {
+            "sub": "有人剛剛給了您積分！",
+            "tea": "呀！ 有人剛剛給了您積分！",
+            "body_txt": "嗨，{{first_name}}：<br> {{sender_name}} 剛剛給您發送了 {{credit_amount}} 個積分。 別害羞喲，您可以用這些積分來認可一位同事！<br>注：{{notes}}",
+            "link_txt": "現在就給予認可"
+        },
+        "GoalCycleParticipantUploadProcessed": {
+            "sub": "您上傳的目標參與者檔案已被處理。",
+            "tea": "您上傳的目標參與者檔案已被處理！",
+            "body_txt": "嗨 ， { { first_name } } ：<br> <br>您 為第{ { cycle_title } } 週期 上 傳 的 參與 者 檔案 已 被 處理 ：<br><br> { { audits }}<br> { { summary } }",
+            "link_txt": "檢視目標週期",
+            "add": "<strong>{{member_name}} 已被添加到此週期<\/strong><br>",
+            "rem": "<strong>{{member_name}} 已被轉移到此週期<\/strong><br>",
+            "sa": "<strong>{{member_name}} 未被添加，因為他\/她已經存在於此週期之中<\/strong><strong><\/strong><br>",
+            "sr": "<strong>{{member_name}} 未被轉移<\/strong><strong><\/strong><br>",
+            "ea": "<strong>由於 {{error}} <\/strong>錯誤，<strong>{{member_name}} 未被添加<\/strong><br>",
+            "er": "<strong>由於 {{error}} <\/strong>錯誤，<strong>{{member_name}} 未被轉移<\/strong><br>",
+            "nadd": "<strong>{{number}}<\/strong> 位參與者已被添加到此週期<br>",
+            "nrem": "<strong>{{number}} <\/strong>位參與者已被轉移到此週期<br>",
+            "nsa": "<strong>{{number}} <\/strong>位參與者未被添加，<strong>因為他\/她已經存在於此週期之中<\/strong><br>",
+            "nsr": "<strong>{{number}} <\/strong>位參與者未被轉移<strong><\/strong><br>",
+            "nea": "<strong>由於錯誤，{{number}<\/strong>} 位參與者未被添加<strong><\/strong><br>",
+            "ner": "<strong>由於錯誤，{{number}} <\/strong>位參與者<strong>未被轉移<\/strong><br>"
+        },
+        "GoalCycleParticipantUploadError": {
+            "sub": "您上傳的參與者檔案有錯誤。",
+            "tea": "您上傳的參與者檔案有錯誤。",
+            "body_txt": "嗨，{{first_name}}：<br><br>您為此週期上傳的參與者檔案 {{file_name}} 有以下錯誤：<br><br>{{audits}}<br>",
+            "link_txt": "檢視目標週期",
+            "lfd": "載入檔案錯誤<br>",
+            "el": "使用者清單空白<br>",
+            "io": "操作類型無效<br><br>",
+            "mo": "混合操作類型<br>",
+            "elu": "載入使用者錯誤<br>",
+            "iun": "使用者名稱無效 {{value}}<br>",
+            "elm": "在載入會員時發生錯誤<br>",
+            "im": "非有效會員 {{value}}<br>"
+        },
+        "GoalCycleBuilt": {
+            "sub": "此目標週期已就緒，您可對其進行編輯",
+            "tea": "編輯並發佈您的目標週期",
+            "bod": "嗨，{{first_name}}：<br><br>{{goal_cycle_title}} 已就緒！ 請跟隨以下連結對此週期進行編輯和發佈：<br>",
+            "lnk": "目標週期"
+        },
+        "GoalCycleCommon": {
+            "que": "若您有任何問題，請聯絡 {{goal_cycle_creator_full_name}}，其電子郵件地址為： {{goal_cycle_creator_email}}。",
+            "gpr": "嗨，{{full_name}}：<br><br>您是 {{goal_cycle_title}} 流程不可或缺的一份子。",
+            "thk": "若您有任何問題，請聯絡 {{goal_cycle_creator_full_name}}，其電子郵件地址為：{{goal_cycle_creator_email}}。<br><br>謝謝！",
+            "vig": "檢視目標",
+            "clg": "關閉目標",
+            "wog": "為實現目標而開展工作",
+            "gog": "{{goal_owner_full_name}} 的目標",
+            "thkV2": "若您有任何問題，請聯絡您的經理。"
+        },
+        "GoalCycleDelivered": {
+            "sub": "現在是創建目標的時候了",
+            "tea": "@:eml.GoalCycleDelivered.sub",
+            "bod": "{{goal_process}} 請跟隨以下連結以完成您的 {{participant_type}} 目標。<br><br>您的目標將於 {{due_date}} 到期。",
+            "lnk": "創建目標",
+            "not": "來自管理員的便函："
+        },
+        "TemplateGoalAssigned": {
+            "sub": "目標已分派給您！",
+            "tea": "@:eml.TemplateGoalAssigned.sub",
+            "bod": "針對 {{goal_cycle_title}} 的目標已分派給您！ 請跟隨此連結以檢視這些目標並追蹤您的進度。 若您有任何問題，請聯絡您的經理。",
+            "lnk": "為實現目標而開展工作"
+        },
+        "GoalCommon": {
+            "thk": "若您有任何問題，請聯絡 {{direct_manager_full_name}}，其電子郵件地址為：{{direct_manager_email}}。<br><br>謝謝！",
+            "atk": "若您有任何問題，請聯絡 {{approver_full_name}}，其電子郵件地址為：{{approver_email}}。<br><br>謝謝！",
+            "rtk": "來自 {{approver_full_name}} 的便函：<br><br>{{note}}<br><br>若您有任何問題，請聯絡 {{approver_full_name}}，其電子郵件地址為：{{approver_email}}。<br><br>謝謝！"
+        },
+        "GoalUpdateOverdueReminder": {
+            "sub": "目標更新逾期！",
+            "tea": "@:eml.GoalUpdateOverdueReminder.sub",
+            "bod": "嗨，{{full_name}}：<br><br>您的 {{goal_name}} {{last_updated}}。 請更新您的目標。<br><br>{{manager_notes}}",
+            "lnk": "@:eml.GoalCycleCommon.clg"
+        },
+        "CloseAdhocGoalPrompt": {
+            "sub": "現在是關閉您目標的時候了！",
+            "tea": "@:eml.CloseAdhocGoalPrompt.sub",
+            "bod": "嗨，{{first_name}}：<br><br>您的個人目標快將結束。 請關閉您的目標。<br><br>{{Goals}}",
+            "lnk": "@:eml.GoalCycleCommon.clg"
+        },
+        "GoalCycleOwnershipTransferred": {
+            "sub": "目標週期擁有權已經轉移給您",
+            "tea": "@:eml.GoalCycleOwnershipTransferred.sub",
+            "bod": "嗨，{{first_name}}：<br><br>現在您已成為以下目標週期的擁有者。<br><br>{{goal_cycles_table}}"
+        },
+        "GoalOwnershipTransferred": {
+            "sub": "目標擁有權已轉移給您",
+            "tea": "@:eml.GoalOwnershipTransferred.sub",
+            "bod": "嗨，{{first_name}}：<br><br>現在您已成為以下目標週期的擁有者。<br><br>{{goals_table}}"
+        },
+        "GoalApproverTransferred": {
+            "sub": "目標核准者已轉變為您",
+            "tea": "@:eml.GoalApproverTransferred.sub",
+            "bod": "嗨，{{first_name}}：<br><br>現在您已成為以下目標的核准者。<br><br>{{goals_table}}"
+        },
+        "GoalCheckIn": {
+            "sub": "檢查您的進度！",
+            "tea": "@:eml.GoalCheckIn.sub",
+            "bod": "嗨，{{first_name}}：<br><br>您正在參與的目標週期\"{{CycleTitle}}\"需要 {{CheckInFrequency}} 更新。 追蹤您的進度：<br/><br/>{{html_body}} 謝謝！<br><br>",
+            "OnTimeGoalsLbl": "以下目標為最新目標：<br><br>",
+            "LateGoalsLbl": "以下目標為最近目標：<br><br>",
+            "ClosedGoalsLbl": "以下目標已提交用於關閉：<br><br>",
+            "SubmittedForClosureGoalsLbl": "以下目標已關閉：<br><br>"
+        },
+        "ApproverOKRStatus": {
+            "sub": "員工目標狀態",
+            "tea": "員工目標活躍度摘要",
+            "bod": "經理姓名：{{manager_name}}<br><br>{{email_body}}"
+        },
+        "CloseSingleAdhocGoalReminder": {
+            "sub": "現在是關閉您目標的時候了",
+            "tea": "@:eml.CloseSingleAdhocGoalReminder.sub",
+            "bod": "嗨，{{first_name}}：<br><br>您的目標 {{goal_name}} 已到達關閉日期。 請關閉您的目標。<br><br>{{manager_notes}}",
+            "lnk": "@:eml.GoalCycleCommon.clg"
+        },
+        "CommentGoal": {
+            "sub": "{{name}} 更新了一個目標",
+            "tea": "有關於目標的新評論！",
+            "bod": "嗨，{{first_name}}：<br><br>{{commentor_name}} 更新了一個涉及到您的目標。 按一下以下來檢視。",
+            "lnk": "@:eml.GoalCycleCommon.vig"
+        },
+        "GoalsSetApproved": {
+            "sub": "您的目標已被核准",
+            "tea": "您的目標已被核准！",
+            "bod": "嗨，{{first_name}}：<br><br>您的 {{goal_cycle_title}} 目標已被 {{approver_full_name}} 核准，幹得不錯！ 如果您現在想要訪問您的目標，請跟隨以下的連結：",
+            "lnk": "@:eml.GoalCycleCommon.vig"
+        },
+        "GoalsClosureApproved": {
+            "sub": "您提出的關於關閉一個目標的請求已被核准",
+            "tea": "您的目標現在已關閉！",
+            "bod": "嗨，{{first_name}}：<br><br>{{approver_full_name}} 已核准您提出的關於關閉 {{goal_cycle_title}} 流程目標的請求。 如果您想要檢視您已關閉的目標，請跟隨以下的連結。",
+            "lnk": "@:eml.GoalCycleCommon.vig"
+        },
+        "GoalSetRejected": {
+            "sub": "您其中的一個目標已被發回以供修訂",
+            "tea": "您的目標已被發回以供修訂",
+            "bod": "嗨，{{first_name}}：<br><br>您為 {{goal_cycle_title}} 創建的目標{{goal_name}} 已被 {{approver_full_name}} 發回供修訂。<br><br>請跟隨以下連結來檢視該目標。",
+            "lnk": "@:eml.GoalCycleCommon.vig"
+        },
+        "GoalCloseRejected": {
+            "sub": "您其中的一個目標必須先被更新才可以關閉！",
+            "tea": "您其中的一個目標必須先被更新才可以關閉！",
+            "bod": "嗨，{{first_name}}：<br><br>{{approver_full_name}} 已將您關於關閉 {{goal_cycle_title}} 流程之 {{goal_name}} 目標的請求發回。 您必須對目標進行修訂才能繼續。 請跟隨以下連結來修訂它們。",
+            "lnk": "@:eml.GoalCycleCommon.vig"
+        },
+        "GoalSetRequested": {
+            "sub": "{{name}} 已提交了一個目標供您核准",
+            "tea": "這些目標需要您的核准！",
+            "bod": "嗨，{{first_name}}：<br><br>請跟隨以下連結來檢視由 {{goal_owner_full_name}} 為 {{goal_cycle_title}} 提交的目標。",
+            "lnk": "@:eml.GoalCycleCommon.gog"
+        },
+        "GoalCloseRequested": {
+            "sub": "{{name}} 已提交目標供您核准以關閉該目標",
+            "tea": "有人請求關閉目標！",
+            "bod": "嗨，{{first_name}}：<br><br>{{goal_owner_full_name}} 已為 {{goal_cycle_title}} 流程提交了一個目標，並且需要您核准以關閉該目標。 請跟隨以下連結以檢閱由 {{goal_owner_full_name}} 提交的目標。",
+            "lnk": "@:eml.GoalCycleCommon.gog"
+        },
+        "GoalCreatedForYou": {
+            "sub": "{{name}} 已為您創建了一個目標。",
+            "tea": "有人為您創建了一個目標！",
+            "bod": "嗨，{{first_name}}：<br><br>{{goal_creator_full_name}} 已為您創建了一個目標 &#39;&#39;{{goal_name}}&#39;&#39;。 請跟隨以下連結來訪問該目標。",
+            "lnk": "@:eml.GoalCycleCommon.vig",
+            "thk": "若您有任何問題，請聯絡 {{goal_creator_full_name}}，其電子郵件地址為：{{goal_creator_email}}。<br><br>謝謝！"
+        },
+        "CloseGoalPrompt": {
+            "sub": "現在是關閉您目標的時候了！",
+            "tea": "@:eml.CloseGoalPrompt.sub",
+            "bod": "嗨，{{first_name}}：<br><br>{{goal_cycle_title}} 即將結束，因此現在是更新並關閉您目標的時候了。 請跟隨以下連結以更新您的最終進度並關閉您的目標：",
+            "lnk": "@:eml.GoalCycleCommon.clg",
+            "thk": "@:eml.GoalCycleCommon.thkV2"
+        },
+        "GoalCreationReminder": {
+            "sub": "您的目標很快就到期了！",
+            "tea": "@:eml.GoalCreationReminder.sub",
+            "bod": "嗨，{{first_name}}，<br><br>請注意！ 您為 {{goal_cycle_title}} 流程設定的{{participant_type}} 目標將於 {{due_date}} 到期。 至少有一個目標尚未提交。 請跟隨以下連結來完成它們：",
+            "lnk": "@:eml.GoalCycleCommon.wog",
+            "thk": "@:eml.GoalCycleCommon.thkV2"
+        },
+        "GoalOverdueReminder": {
+            "sub": "噓...您的目標已逾期。",
+            "tea": "@:eml.GoalCreationReminder.sub",
+            "bod": "嗨，{{first_name}}：<br><br>簡短提醒您盡快輸入您已於 {{due_date}} 逾期的 {{goal_cycle_title}} 目標。 請按一下以下連結來完成對它們的輸入。",
+            "lnk": "@:eml.GoalCycleCommon.wog",
+            "thk": "@:eml.GoalCycleCommon.thkV2"
+        },
+        "CloseGoalOverdue": {
+            "sub": "請別忘了關閉您的目標！",
+            "tea": "@:eml.CloseGoalOverdue.sub",
+            "bod": "嗨，{{first_name}}：<br><br>您的 {{goal_cycle_title}} 目標已於 {{close_due_date}} 到期。 請跟隨以下連結對您的進度做最終的更新並關閉它們：",
+            "lnk": "@:eml.GoalCycleCommon.wog",
+            "thk": "@:eml.GoalCycleCommon.thkV2"
+        },
+        "ParticipantType": {
+            "mem": "個人",
+            "tm": "部門",
+            "cmp": "公司"
+        },
+        "Moved360ToRequesterAssess": {
+            "sub": "請完成您對 {{subject_name}} 的評定",
+            "tea": "您有一個新的請求",
+            "body_txt": "嗨，{{first_name}}：<br><br>所有參與者均已針對您關於 {{subject_name}} 的 {{cycle_title}} 之請求提供了回應。 請跟隨以下連結來完成您的評定。",
+            "link_txt": "360度檢視"
+        },
+        "Moved360ToMarkComplete": {
+            "sub": "請檢閱並完成 {{subject_name}} 的 {{cycle_title}}",
+            "tea": "您有一個新的請求",
+            "body_txt": "嗨，{{first_name}}：<br><br>所有參與者均已針對您關於 {{subject_name}} 的 {{cycle_title}} 之請求提供了回應。 請按一下以下連結以檢閱並完成此360度檢視。",
+            "link_txt": "360度檢視"
+        },
+        "Feedback360SubjectSessionRequested": {
+            "sub": "{{requester_name}} 已請求進行一次自我反省",
+            "tea": "您有一個新的請求",
+            "body_txt": "嗨，{{first_name}}：<br><br>{{requester_name}} 已請求對 <strong>{{cycle_title}}<\/strong> 進行一次自我反省。 請按一下以下來開始。",
+            "link_txt": "開始"
+        },
+        "Feedback360ReviewerSessionRequested": {
+            "sub": "{{requester_name}} 請求您提供關於 {{subject_name}} 的反饋意見",
+            "tea": "您有一個新的請求",
+            "body_txt": "嗨，{{first_name}}：<br><br>{{requester_name}} 請求您針對 {{cycle_title}} 的<strong> {{subject_name}}<\/strong>提供反饋意見。 請按一下以下來開始。",
+            "link_txt": "開始"
+        },
+        "FeedbackSessionRequested": {
+            "sub": "針對 {{cycle_title}} 的新請求",
+            "tea": "您有一個新的請求",
+            "body_txt": "<br><br>嗨，{{first_name}}：{{subject_name}} 希望您來完成 <strong>{{cycle_title}}<\/strong>。",
+            "link_txt": "檢視請求"
+        },
+        "FeedbackSessionDeclined": {
+            "sub": "針對 {{cycle_title}} 的請求已被拒絕。",
+            "sub_anonymous": "有人已拒絕您針對 {{cycle_title}} 的請求。",
+            "tea": "您的請求已被拒絕",
+            "body_txt": "嗨，{{first_name}}：<br><br>{{reviewer_name}} 已拒絕您針對 <strong>{{cycle_title}} <\/strong>的請求。 <br><br>拒絕的原因：<br><br>{{decline_note}}<br>",
+            "body_txt_anonymous": "嗨，{{first_name}}：<br><br>有人已拒絕您針對 {<strong>{cycle_title}} <\/strong>的請求。 <br><br>拒絕的原因：<br><br>{{decline_note}}<br>",
+            "link_txt": "檢視便函"
+        },
+        "SelfEvaluationSubmitted": {
+            "sub": "{{subject_name}} 已完成 {{cycle_title}}",
+            "tea": "預定檢查已完成",
+            "body_txt": "嗨，{{first_name}}：<br><br>{{subject_name}} 已完成 <strong>{{cycle_title}}<\/strong>。",
+            "link_txt": "檢視"
+        },
+        "FeedbackSessionSubmitted": {
+            "sub": "收到來自 {{reviewer_name}} 的 {{cycle_title}}",
+            "sub_anonymous": "有人已完成您針對 {{cycle_title}} 的請求",
+            "tea": "收到的反饋",
+            "body_txt": "嗨，{{first_name}}：<br><br>{{reviewer_name}} 已完成您針對<strong> {{cycle_title}} <\/strong>的請求。",
+            "body_txt_anonymous": "嗨，{{first_name}}：<br><br>有人已回應了您針對<strong> {{cycle_title}} <\/strong>的請求。",
+            "link_txt": "檢視"
+        },
+        "EvaluateOthersSubmitted": {
+            "sub": "收到來自 {{reviewer_name}} 關於 {{subject_name}} 的 {{cycle_title}}",
+            "sub_anonymous": "有人已完成您針對 {{cycle_title}} 提出的關於 {{subject_name}} 的請求。",
+            "tea": "收到的反饋",
+            "body_txt": "嗨，{{first_name}}：<br><br>{{reviewer_name}} 已完成您針對<strong> {{cycle_title}}<\/strong> 提出的關於 {{subject_name}} 的請求。",
+            "body_txt_anonymous": "嗨，{{first_name}}：<br><br>有人已回應了您針對 {{cycle_title}} 提出的關於 {{subject_name}} 的請求。",
+            "link_txt": "檢視"
+        },
+        "GiveFeedbackSubmitted": {
+            "sub": "收到來自 {{reviewer_name}} 的 {{cycle_title}}",
+            "tea": "收到的反饋",
+            "body_txt": "嗨，{{first_name}}：<br><br>{{reviewer_name}} 已給了您<strong> {{cycle_title}}<\/strong>。",
+            "link_txt": "檢視"
+        },
+        "Share360WithSubject": {
+            "sub": "{{requester_name}} 已完成並分享了您的 {{cycle_title}}",
+            "tea": "您可以檢閱您的360度評論",
+            "body_txt": "{{requester_name}} 已完成並分享了您的 {{cycle_title}} 請按一下以下來檢閱並將其標記為完成。",
+            "link_txt": "檢閱"
+        },
+        "SelfEvaluationDelivered": {
+            "sub": "針對 {{cycle_title}} 的新請求",
+            "tea": "請完成您的預定檢查",
+            "body_txt": "嗨，{{first_name}}：<br><br><strong>{{group_name}} <\/strong>希望您完成 {{cycle_title}}。",
+            "link_txt": "檢視請求"
+        },
+        "FeedbackCheckInApproved": {
+            "sub": "您的檢查已被核准！",
+            "tea": "@:eml.FeedbackCheckInApproved.sub",
+            "body_txt": "<br><br><strong>嗨，{{first_name}}：您的高級經理已核准您針對 {{cycle_title}} 的檢查！<\/strong> 請按一下以下來檢閱您的經理所擷取的任何便函。",
+            "link_txt": "簽署您的檢查"
+        },
+        "FeedbackCheckInManagerNotesAvailable": {
+            "sub": "{{name}} 已完成 {{title}}！",
+            "tea": "{{name}} 已完成 {{title}}！",
+            "body_txt": "嗨，{{first_name}}：<br><br>{{reviewer_name}} 已完成 <strong>{{cycle_title}}<\/strong>。 如果您的經理已添加任何便函，您可通過按一下以下連結來檢閱它們。",
+            "link_txt": "檢視檢查"
+        },
+        "TalentInsightAssessmentDelivered": {
+            "sub": "現在是完成您的人才洞察評定的時候了",
+            "tea": "請完成您的團隊評定",
+            "body_txt": "嗨，{{first_name}}：<br><br>現在是為您的團隊完成人才洞察的時候了！ 請按一下以下連結來開始。",
+            "link_txt": "完成人才洞察"
+        },
+        "FeedbackRequestExpiring": {
+            "sub": "針對 {{cycle_title}} 的請求將在 {{expire_in_days}} 天後到期",
+            "tea": "反饋請求即將到期",
+            "body_txt": "嗨，{{first_name}}：<br><br>{{subject_name}} 在 {{number_of_days}} 天前給您發送了一個針對 {{cycle_title}} 的請求。 它將在 {{expire_in_days}} 天後到期。 請在該截止時間之前花一點時間來完成它。",
+            "link_txt": "檢視請求"
+        },
+        "FeedbackSessionRated": {
+            "sub": "您已收到了一份來自 {{subject_name}} 的便函。",
+            "tea": "已收到的便函",
+            "body_txt": "嗨，{{first_name}}：<br><br>{{subject_name}} 給您發送了一份關於您針對 <strong>{{cycle_title}} 之回應的便函<\/strong>。<br>",
+            "link_txt": "檢視便函"
+        },
+        "FeedbackCardAvailable": {
+            "sub": "有新的反饋表單可用",
+            "tea": "可用的反饋表單",
+            "body_txt": "嗨，{{first_name}}：<br><br><strong>{{cycle_title}} <\/strong>現在可供您使用了。<br\/>",
+            "link_txt": "請求反饋"
+        },
+        "FeedbackCycleClosedOrArchived": {
+            "sub": "{{cycle_title}} 已不再可用",
+            "tea": "反饋不再可用",
+            "body_txt": "嗨，{{first_name}}：<br><br><strong>{{cycle_title}} <\/strong>已由您的管理員 {{cycle_status}}，您將無法完成它。 如果您在過去已使用過 {{cycle_title}}，那麼您將 {{access_type}} 能夠訪問這些記錄。<br\/><br\/>若您有任何問題，請聯絡 {{admin_name}}，其電子郵件地址為：{{admin_email}}。 <br\/> <br\/>"
+        },
+        "FeedbackSessionUnsubmitted": {
+            "sub": "{{unsubmitter_full_name}} 已撤回了一項檢查",
+            "tea": "名為 {{cycle_title}} 的檢查已被撤回",
+            "body_txt": "尊敬的 {{reviewers_full_names}}： {{unsubmitter_full_name}} 已撤回 {{cycle_title}} 以作修訂。 {{subject_full_name}} 現在可以進行編輯並再次提交了。",
+            "link_txt": "檢查"
+        },
+        "FeedbackSessionReopenedByManager": {
+            "sub": "您的檢查已被重新開啟",
+            "tea": "名稱為 {{cycle_title}} 的檢查已被重新開啟",
+            "body_txt": "尊敬的 {{subject_full_name}}：您的 {{cycle_title}} 已被重新開啟以供修訂。 若您有任何問題，請聯繫您的經理 {{managers_full_name}}。",
+            "link_txt": "檢查"
+        },
+        "EmployeeOnboarded": {
+            "sub": "您被邀請加入 {{company}}",
+            "tea": "您被邀請加入 {{company}}",
+            "body_txt": "歡迎加入 {{company}}，{{first_name}}！ <br\/> <br\/>{{company}} 很自豪地為您介紹一個很強大的新工具，它將幫助您以前所未有的效率投身于您的工作之中。",
+            "body_supplement_txt": "<br\/><br\/> <strong> 您的使用者名稱為：{{username}}<\/strong> <br\/><br\/>此連結將在 {{hours}} 小時之後失效。 <br\/>若您遇到問題，只需將 app.highground.com 粘貼到您的瀏覽器之中並按一下 [重設我的密碼] 即可。<br\/><br\/>還有其他問題？，請發送電子郵件至：<br\/>support@highground.com",
+            "link_txt": "確認您的帳戶"
+        },
+        "PasswordResetRequestCreated": {
+            "sub": "重設您的 HighGround 密碼",
+            "tea": "重設您的 HighGround 密碼",
+            "body_txt": "嗨，{{first_name}}：<br\/>  <br\/>忘記您的密碼了嗎？ 別擔心，這是常有的事！ <br\/><br\/> 請按一下以下按鈕或此連結：{{link_url}}。 它將在一個小時后失效。 <br\/><br\/>並未提出過這項請求？ 請忽略此電子郵件即可。",
+            "link_txt": "重設您的密碼"
+        },
+        "PasswordChanged": {
+            "sub": "密碼重設確認",
+            "tea": "您的密碼已被變更！",
+            "body_txt": "嗨，{{first_name}}：<br\/> <br\/>看起來好像您的密碼最近已被變更。 如果您本人並未做過此項變更，請發送電子郵件至 support@highground.com 聯絡我們，我們將解決這個問題。",
+            "link_txt": "登入"
+        },
+        "UserNotificationEmailChanged": {
+            "sub": "電子郵件地址更新確認",
+            "tea": "您的通知電子郵件地址已被更新。",
+            "body_txt": "嗨，{{first_name}}：<br><br>看起來好像您的通知電子郵件地址最近已被變更。 如果您本人並未做過此項變更，請發送電子郵件至 support@highground.com 聯絡我們，我們將解決這個問題。"
+        },
+        "OffBoardMember": {
+            "sub": "{{group}} 帳戶已停用",
+            "tea": "您的帳戶已被停用",
+            "body_txt": "嗨，{{first_name}}：<br\/><br\/>您的 {{group}} 帳戶已被停用。 您依然能夠登入並消費您的剩餘積分。 <br\/><br\/>若您覺得這肯定發生了錯誤，或者若您有任何問題，請隨時發送電子郵件至 support@highground.com 聯絡我們。",
+            "thank": "謝謝，<br\/>{{group}}"
+        },
+        "RecapBuilder": {
+            "rcrr": "<strong>{{RecipientName}} <\/strong>收到了一項 <a href=\"{{RecUrl}}\"><strong>{{RecTitle}}<\/strong><\/a> 認可！",
+            "rcr1": "本公司{{CompanyRecognitionTime}}有人給予了 1 個認可。",
+            "rcrm": "{{CompanyRecognitionTime}}，本公司有人給予了 {{CompanyRecognitionNumber}} 個認可。",
+            "yst": "昨天",
+            "wk": "在過去的一週",
+            "fr": "在星期五和週末期間",
+            "hi": "嗨，{{MyFirstName}}：",
+            "yr1": "您 {{CompanyRecognitionTime}} 收到了 1 個認可。",
+            "yrm": "您 {{CompanyRecognitionTime}} 收到了 {{MyRecognitionNumber}} 個認可。",
+            "grs": "去認可某人！",
+            "vr": "檢視所有認可",
+            "lwa": "上週的週年紀念日",
+            "twa": "本週的週年紀念日",
+            "lwb": "上週的生日",
+            "twb": "本週的生日",
+            "ta": "今天的週年紀念日",
+            "toa": "明天的週年紀念日",
+            "twka": "本週末的週年紀念日",
+            "pwka": "上週末的週年紀念日",
+            "na": "無週年紀念日",
+            "tb": "今天的生日",
+            "tob": "明天的生日",
+            "twkb": "本週末的生日",
+            "pwb": "上週末的生日",
+            "nb": "無生日",
+            "ol": "1 個讚",
+            "li": "{{like_num}} 個讚",
+            "oc": "1 個評論",
+            "co": "{{comment_num}} 個評論",
+            "cya": "請檢查您的 {{program_name}} 活躍度，以獲得最新的資訊和狀態",
+            "dare": "每日",
+            "wkre": "每週",
+            "annis": "{{years}} 年前的 {{date}}",
+            "anni": "1 年前的 {{date}}",
+            "rec": "{{interval}} 精華",
+            "act": "{ { interval}}{{company } } 活躍度摘要",
+            "sma": "<a href=\"{{optout_url}}\">檢視提要內的所有 {{total}} 個週年紀念日<\/a><br \/>",
+            "smb": "<a href=\"{{optout_url}}\">檢視提要內的所有 {{total}} 個生日<\/a><br \/>",
+            "csma": "<a href=\"{{optout_url}}\">檢視更多週年紀念日<\/a><br \/>",
+            "csmb": "<a href=\"{{optout_url}}\">檢視更多生日<\/a>"
+        },
+        "RecognitionReceived": {
+            "sub": "您已被認可！",
+            "tea": "您已被認可！",
+            "body_txt": "嗨，{{first_name}}：<br><br>{{recog_giver}} 已給予您 \"{{template_title}}\" 徽章！ 請按一下以下連結查看您的認可：",
+            "link_txt": "檢視認可"
+        },
+        "ServiceAwardPointMissing": {
+            "sub": "用於服務獎勵的遺漏積分",
+            "tea": "請為使用者發送積分",
+            "body_txt": "嗨，{{first_name}}：<br><br>{{recipient_full_name}} 收到了徽章<strong> {{badge_title}}<\/strong> 但沒有收到 {{point_number}} 個積分。 請為 {{recipient_full_name}} 發送積分。",
+            "link_txt": "檢視認可"
+        },
+        "PublicRecognitionReceived": {
+            "sub": "收到的公開認可\/評分",
+            "tea": "{{recipient_full_name}} 已獲得一項公開認可！",
+            "body_txt": "您 好 ！<br><br>{ { recipient_full_name } } 已 收到 來自 { { recog_giver_company}}{{recog_giver } } 的 { { template_title } } 徽章 ， 並且 包含如下 內容 ：<br> <br>{ { if_canned_message_selected } } <br>公司 評分 ： { { company_rating_number}} { { recipient_full_name } } 的 評分 ： <br>{ { recipient_first_name_rating_number}}<br><br> 請按一下 以下 連結 查看 認 可 ：<br>",
+            "link_txt": "檢視認可",
+            "none": "無"
+        },
+        "RecognitionCommentReceived": {
+            "sub": "您有 1 個新評論",
+            "tea": "您有 1 個關於您認可的新評論！",
+            "body_txt": "嗨，{{first_name}}：<br><br>{{commentor_name}} 剛剛對您的徽章發表了評論：<br><br>{{comment}}<br>",
+            "optout_txt": "<a href=\"{{optout_url}}\">請按一<\/a>下這裡以將關於此認可的通知設為靜音",
+            "link_txt": "檢視評論"
+        },
+        "GiveRecognitionError": {
+            "sub": "無法發送您的認可",
+            "tea": "您的認可無法發送。",
+            "body_txt": "嗨，{{issuer_name}}：<br><br>您的認可無法發送：<br><br>{{error_message}}"
+        },
+        "WelcomeReceived": {
+            "sub": "歡迎加入 {{program_name}}",
+            "tea": "您已被認可！",
+            "body_txt": "嗨，{{first_name}}：<br><br>{{recog_giver}} 已給予您 \"{{template_title}}\" 徽章！ 請按一下以下連結查看您的認可：",
+            "link_txt": "檢視認可"
+        },
+        "Birthday": {
+            "sub": "生日快樂！來自 {{company}} 的祝福！",
+            "tea": "生日快樂！{{first_name}}！",
+            "body_txt": "嗨，{{first_name}}：<br><br>{{company}} 想要祝願您 {{birthday_title}} 請按一下以下連結來查看您的認可。<br\/>",
+            "link_txt": "查看您的認可"
+        },
+        "Anniversary": {
+            "sub": "週年紀念日快樂！來自 {{company}} 的祝福！",
+            "tea": "週年紀念日快樂！{{first_name}}！",
+            "body_txt": "嗨，{{first_name}}：<br><br>{{company}} 想要祝願您 {{birthday_title}} 請按一下以下連結來查看您的認可。<br\/>",
+            "link_txt": "查看您的認可"
+        },
+        "PublicFeedbackReceived": {
+            "sub": "收到\/被評的公開反饋",
+            "tea": "噢不會吧，{{recipient_full_name}} 獲得了一個比較低的評分",
+            "body_txt": "您好！<br><br>{{recog_giver}} 已給出對 {{recipient_full_name}} 的反饋，並且包含如下內容：<br><br>公司評分： {{company_rating_number}}{{recipient_full_name}}的評分：<br>{{recipient_first_name_rating_number}}<br><br>{{if_canned_message_selected}}<br><br><br>謝謝！"
+        },
+        "UserTagged": {
+            "sub": "{{commentor_name}} 剛剛在一個評論中提到了您！",
+            "tea": "有人提到了您！",
+            "body_txt": "嗨，{{first_name}}：<br\/><br\/>{{commentor_name}} 剛剛在一個關於一個 {{entity_type}} 的評論中提到了您：<br\/><br\/>{{comment}}",
+            "link_txt": "檢視評論"
+        },
+        "RecogntionGive": {
+            "sub": "{{first_name}}：現在是認可某個人的時候了",
+            "tea": "現在是認可某個人的時候了",
+            "body_txt": "嗨，{{first_name}}：<br\/><br\/>我注意到，自您上次認可 {{program_name}} 中的某個人以來已有一段時間了。 花幾分鐘的時間公開認可您的同事將會對大家有很大的幫助。<br><br>註：{{notes}}",
+            "link_txt": "認可某個人"
+        },
+        "SpotBonusRequestToApprover": {
+            "sub": "即時獎金獎勵所需的檢閱",
+            "tea": "檢閱即時獎金獎勵",
+            "body_txt": "您好！{{approver_full_name}}：<br><br>{{giver_full_name}} 已為 {{receiver_full_name}} 提交了一筆即時獎金 （{{spot_bonus_name}}{{spot_bonus_level}} {{spot_bonus_value}} {{spot_bonus_currency}}）。 此項獎勵已添加至您的清單供您檢閱。 <br><br>所包含的 {{giver_full_name}} 訊息如下：<br><br>{{spot_bonus_message}} <br><br>請注意：如果另一位核准者在您能夠檢閱該即時獎金之前拒絕了它，該項即時獎勵將從您的佇列中移除，而且將不再需要您的核准。",
+            "link_txt": "檢視需要檢閱的即時獎金項目"
+        },
+        "SpotBonusRequestToGiver": {
+            "sub": "感謝您提交的即時獎金",
+            "tea": "您的即時獎金已提交",
+            "body_txt": "您好！{{giver_full_name}}：<br><br>感謝您為 {{receiver_full_name}} 提交了一筆即時獎金。 您的提交將被檢閱，而且您將獲得關於結果的通知。 為了供您參考 ，您提交了如下資訊 ：<br><br> 姓名 ： { { receiver_full_name }} <br>即時獎金 ： { { spot_bonus_name}}{{spot_bonus_level}} ， 金額為 { { spot_bonus_value }}{{spot_bonus_currency } } 。 <br>訊息 ： { { spot_bonus_message }"
+        },
+        "RejectSpotBonusRequest": {
+            "sub": "即時獎金獎勵已被拒絕",
+            "tea": "您的即時獎金已被拒絕",
+            "body_txt": "您好 ！ { { giver_full_name } } ：<br><br> 您為 { { receiver_full_name } } 提交的即時獎金 （ { { spot_bonus_name}}{{spot_bonus_level}} ， 金額為 { { spot_bonus_value }}{{spot_bonus_currency } } ）因以下原因已 被拒絕 ：<br> <br>{ { reject_reason}}<br> { { reject_comment }<br> <br>} 您包含的訊息如下 ：<br> { { spot_bonus_message } }",
+            "dr": "複製請求",
+            "nmr": "不符合獎勵要求",
+            "slt": "以較低級別重新提交",
+            "sht": "以較高級別重新提交",
+            "nea": "此人不符合獎勵資格",
+            "min": "需要更多資訊"
+        },
+        "ApproveSpotBonusRequest": {
+            "sub": "即時獎金獎勵已獲得核准",
+            "tea": "您的即時獎金已獲得核准",
+            "pub_body_txt": "您好！{{giver_full_name}}：<br><br>您為 {{receiver_full_name}} 提交的即時獎金（{{spot_bonus_name}}{{spot_bonus_level}}）已被核准。 即時獎金現在對於收件者是可見的並可在提要內獲得。",
+            "body_txt": "您好！{{giver_full_name}}：<br><br>您為 {{receiver_full_name}} 提交的即時獎金（{{spot_bonus_name}}{{spot_bonus_level}}）已被核准。 收件者現在可以看見即時獎金。",
+            "link_txt": "按一下這裡以檢視"
+        },
+        "YearSummaryReportReady": {
+            "sub": "設定檔摘要已就緒，可以下載",
+            "tea": "設定檔摘要已就緒，可以下載",
+            "body_txt": "嗨，{{first_name}}：<br><br>此摘要已就緒，可以下載。<br><br>{{html_body}}",
+            "link_txt": "下載摘要",
+            "gls": "目標",
+            "fdb": "反饋",
+            "chk": "檢查",
+            "rcg": "認可"
+        },
+        "PulseSurveyOverdue": {
+            "sub": "{{programName}} 調查提醒",
+            "tea": "您的人氣調查已逾期！",
+            "body_txt": "<p style='font-family: Helvetica, sans-serif;'>您好！<br\/><br\/>我們尚未收到您的來信。 {{responseType}} 您的回應將會如常是匿名的。<br\/><br\/><b>{{question}}<br\/><br\/><br\/>{{answerType}}<\/b><\/p>"
+        },
+        "TangoGiftCard_39443": {
+            "sub": "您的 {{card_name}} 禮品卡資訊在裡面！",
+            "tea": "內附獎勵，請享用！",
+            "body_txt": "嗨，{{first_name}}：<br><br>恭喜您兌換您的積分！<br><br>全球虛擬維薩獎勵（Global Virtual Visa Reward）系統讓您可以在接受維薩卡（Visa）的任何地方實質上自由享用您的獎勵。 通过即时消费，全球虚拟維薩獎勵（Global Virtual Visa Reward）系統讓您可以盡情在您喜愛的線上商家享受線上購物。<br><br>請勿删除此信息 -- 您將需要下面的連結來兌換您的獎勵。 您也許會想將此訊息打印出來，以供稍後參照。 您的訂單號碼為 {{order_number}}。<br><br>謝謝！",
+            "link_txt": "現在兌換",
+            "claim_url_txt": "兌換連結",
+            "gca_txt": "禮品卡金額：",
+            "redeem_instructions": "兌換須知：請於今天啟用您的預付帳戶。 若未被使用，此啟用代碼將在自本電子郵件發送之日起的 30 天后失效。 一旦啟用，您的預付卡將在 12 個月之後失效。",
+            "disclaimer": "* EntroPay 維薩卡（EntroPay Visa cards）由瓦萊塔銀行（Bank of Valletta）或交易網路有限公司（Transact Network Limited）依據維薩歐洲（Visa Europe）的授權而發行。 所代表的商家並非獎勵的贊助商或與此次促銷有任何附屬關係。 所附標誌及其他識別標記均為每一家所代表公司和\/或其關係企業的商標並為其所擁有。"
+        }
+    }
+}

@@ -1,0 +1,60 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-10 12:54+0900\n"
+"PO-Revision-Date: 2017-02-14 08:59-0500\n"
+"Last-Translator: Martin Brownridge <mbrownridge@indeed.com>\n"
+"Language-Team: English <http://example.com/weblate/projects/indeed/samba-webapp/en/>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5);\n"
+"X-Generator: Weblate 1.8\n"
+
+#. jobs block: text describing total number of jobs
+#: src/resources/templates/soy/page.soy:1
+#, java-format
+msgctxt "jobs block: this is the msgctxt comment"
+msgid "Total {0} job"
+msgid_plural "Total {0} jobs"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#.
+#: src/resources/templates/soy/page.soy:1
+#, java-format
+msgid "This job may be expired or no longer being advertised."
+msgstr ""
+
+#. test block: note to test another var in text
+#: src/resources/templates/soy/page.soy:1
+#, java-format
+msgctxt "test block: ctxt to test another var in text"
+msgid "My friend"
+msgid_plural "My %1 friends"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#. test block: note to test another var in text 2
+#: src/resources/templates/soy/page.soy:1
+#, java-format
+msgctxt "test block: ctxt to test another var in text 2"
+msgid "Your friend"
+msgid_plural "Your %1 friends"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
