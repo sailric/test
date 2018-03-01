@@ -1,7 +1,7 @@
 {
 	"contact": "Yong Chen",
 	"email": "yongc@inwhatlanguage.com",
-	"targets": ["es","ja"],
+	"targets": ["ja"],
 	"updDays": "2",
 	"updHour": "1",
 	"file_filters": [".idml",".docx"],
@@ -15,8 +15,8 @@
 			"directory": "",
 			"file": "%filename%_%langcode%.%fileext%"
 		   },
-		  "file_filters": [".idml;"],
-		  "targets": ["es","zh"],
+		  "file_filters": [".idml"],
+		  "targets": ["zh"],
 		  "transMethod": "mt" 
 		},
 		{ "path":"Word",
