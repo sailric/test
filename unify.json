@@ -1,7 +1,7 @@
 {
 	"contact": "Yong Chen",
 	"email": "yongc@inwhatlanguage.com",
-	"targets": ["ge","ja"],
+	"targets": ["es","ja"],
 	"updDays": "2",
 	"updHour": "1",
 	"file_filters": [".idml",".docx"],
