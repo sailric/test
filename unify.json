@@ -15,7 +15,7 @@
 			"directory": "",
 			"file": "%filename%_%langcode%.%fileext%"
 		   },
-		  "file_filters": [".idm;"],
+		  "file_filters": [".idml;"],
 		  "targets": ["es","zh"],
 		  "transMethod": "mt" 
 		},
